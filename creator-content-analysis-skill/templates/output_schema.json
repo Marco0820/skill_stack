@@ -1,0 +1,285 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CreatorContentAnalysisOutput",
+  "description": "自媒体博主内容分析输出数据结构",
+  "type": "object",
+  "properties": {
+    "meta": {
+      "type": "object",
+      "description": "分析元数据",
+      "properties": {
+        "analysis_time": {
+          "type": "string",
+          "description": "分析时间"
+        },
+        "skill_version": {
+          "type": "string",
+          "description": "Skill 版本"
+        },
+        "data_completeness": {
+          "type": "number",
+          "description": "数据完整度（0-100）"
+        },
+        "confidence_score": {
+          "type": "number",
+          "description": "分析置信度（0-100）"
+        }
+      }
+    },
+    "summary": {
+      "type": "string",
+      "description": "账号一句话定位"
+    },
+    "account_profile": {
+      "type": "object",
+      "description": "账号基础画像",
+      "properties": {
+        "name": { "type": "string" },
+        "platform": { "type": "string" },
+        "profile_url": { "type": "string" },
+        "followers_tier": { "type": "string", "description": "粉丝量级" },
+        "followers_count": { "type": "string" },
+        "total_posts": { "type": "string" },
+        "content_type": { "type": "string" },
+        "target_audience": { "type": "string" },
+        "account_stage": { "type": "string", "description": "账号发展阶段" },
+        "engagement_rate": { "type": "string", "description": "互动率" }
+      }
+    },
+    "track_analysis": {
+      "type": "object",
+      "description": "内容赛道分析",
+      "properties": {
+        "primary_track": { "type": "string", "description": "一级赛道" },
+        "secondary_track": { "type": "string", "description": "二级细分赛道" },
+        "competition_level": { "type": "string", "description": "竞争强度" },
+        "commercial_potential": { "type": "string", "description": "商业化潜力" },
+        "user_needs": { "type": "string", "description": "赛道用户需求" },
+        "differentiation": { "type": "string", "description": "差异化定位" }
+      }
+    },
+    "tone_analysis": {
+      "type": "object",
+      "description": "内容调性分析",
+      "properties": {
+        "primary_tone": { "type": "string", "description": "主导调性" },
+        "tone_scores": {
+          "type": "object",
+          "description": "各调性评分",
+          "additionalProperties": { "type": "number" }
+        },
+        "tone_evidence": { "type": "string", "description": "调性判断依据" }
+      }
+    },
+    "style_analysis": {
+      "type": "object",
+      "description": "内容风格分析",
+      "properties": {
+        "title_style": { "type": "string" },
+        "cover_style": { "type": "string" },
+        "hook_type": { "type": "string", "description": "开头钩子类型" },
+        "narrative_structure": { "type": "string" },
+        "language_habits": { "type": "string" },
+        "editing_rhythm": { "type": "string" },
+        "ending_guide": { "type": "string" },
+        "has_strong_persona": { "type": "boolean" },
+        "is_replicable": { "type": "boolean", "description": "是否适合矩阵化复制" }
+      }
+    },
+    "tags": {
+      "type": "object",
+      "description": "内容标签体系",
+      "properties": {
+        "account_tags": {
+          "type": "object",
+          "description": "账号级标签",
+          "properties": {
+            "track": { "type": "array", "items": { "type": "string" } },
+            "audience": { "type": "array", "items": { "type": "string" } },
+            "topic": { "type": "array", "items": { "type": "string" } },
+            "emotion": { "type": "array", "items": { "type": "string" } },
+            "style": { "type": "array", "items": { "type": "string" } },
+            "commercial": { "type": "array", "items": { "type": "string" } },
+            "hotspot": { "type": "array", "items": { "type": "string" } },
+            "format": { "type": "array", "items": { "type": "string" } },
+            "platform": { "type": "array", "items": { "type": "string" } },
+            "virality": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "tag_distribution": {
+          "type": "array",
+          "description": "标签分布统计",
+          "items": {
+            "type": "object",
+            "properties": {
+              "dimension": { "type": "string" },
+              "tag": { "type": "string" },
+              "count": { "type": "number" },
+              "percentage": { "type": "number" }
+            }
+          }
+        }
+      }
+    },
+    "viral_patterns": {
+      "type": "object",
+      "description": "爆款规律",
+      "properties": {
+        "viral_rate": { "type": "string", "description": "爆款率" },
+        "high_frequency_topics": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "topic": { "type": "string" },
+              "count": { "type": "number" },
+              "viral_rate": { "type": "string" }
+            }
+          }
+        },
+        "title_formulas": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "formula": { "type": "string" },
+              "example": { "type": "string" },
+              "frequency": { "type": "number" }
+            }
+          }
+        },
+        "hook_types": { "type": "array", "items": { "type": "string" } },
+        "emotion_triggers": { "type": "array", "items": { "type": "string" } },
+        "viral_commonalities": { "type": "array", "items": { "type": "string" } },
+        "non_viral_issues": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "content_items": {
+      "type": "array",
+      "description": "单条内容分析",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "url": { "type": "string" },
+          "publish_time": { "type": "string" },
+          "core_topic": { "type": "string" },
+          "summary": { "type": "string" },
+          "hook": { "type": "string" },
+          "pain_point": { "type": "string" },
+          "core_viewpoint": { "type": "string" },
+          "emotion_trigger": { "type": "string" },
+          "structure": { "type": "string" },
+          "conversion_point": { "type": "string" },
+          "viral_level": { "type": "string", "enum": ["S", "A", "B", "C", "D"] },
+          "replicable_elements": { "type": "array", "items": { "type": "string" } },
+          "risks": { "type": "array", "items": { "type": "string" } },
+          "tags": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "commercial_potential": {
+      "type": "object",
+      "description": "商业化潜力分析",
+      "properties": {
+        "maturity": { "type": "string", "description": "商业化成熟度" },
+        "ad_categories": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "category": { "type": "string" },
+              "match_score": { "type": "number" },
+              "reason": { "type": "string" }
+            }
+          }
+        },
+        "ecommerce_categories": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "category": { "type": "string" },
+              "match_score": { "type": "number" },
+              "method": { "type": "string" }
+            }
+          }
+        },
+        "knowledge_monetization": { "type": "string" },
+        "private_domain_potential": { "type": "string" },
+        "brand_collaboration": { "type": "string" },
+        "revenue_estimate": {
+          "type": "object",
+          "properties": {
+            "ad_revenue": { "type": "string" },
+            "ecommerce_revenue": { "type": "string" },
+            "knowledge_revenue": { "type": "string" },
+            "total_estimate": { "type": "string" }
+          }
+        },
+        "risks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": { "type": "string" },
+              "level": { "type": "string" },
+              "description": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "benchmark_recommendations": {
+      "type": "object",
+      "description": "对标复刻建议",
+      "properties": {
+        "best_practices": { "type": "array", "items": { "type": "string" } },
+        "replicable_structures": { "type": "array", "items": { "type": "string" } },
+        "title_templates": { "type": "array", "items": { "type": "string" } },
+        "expandable_topics": { "type": "array", "items": { "type": "string" } },
+        "imitation_strategy": { "type": "string" },
+        "replicable_topics": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "topic": { "type": "string" },
+              "angle": { "type": "string" },
+              "reference_content": { "type": "string" }
+            }
+          }
+        },
+        "optimization_suggestions": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "risks_and_issues": {
+      "type": "array",
+      "description": "风险与不足",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": { "type": "string" },
+          "severity": { "type": "string", "enum": ["高", "中", "低"] },
+          "description": { "type": "string" },
+          "suggestion": { "type": "string" }
+        }
+      }
+    },
+    "future_topics": {
+      "type": "array",
+      "description": "后续内容选题建议",
+      "items": {
+        "type": "object",
+        "properties": {
+          "topic": { "type": "string" },
+          "angle": { "type": "string" },
+          "target_pain_point": { "type": "string" },
+          "expected_viral_potential": { "type": "string" },
+          "suggested_title": { "type": "string" }
+        }
+      }
+    }
+  }
+}

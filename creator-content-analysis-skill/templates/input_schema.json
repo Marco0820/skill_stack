@@ -1,0 +1,190 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CreatorContentInput",
+  "description": "自媒体博主内容分析输入数据结构",
+  "type": "object",
+  "required": ["creator", "contents"],
+  "properties": {
+    "creator": {
+      "type": "object",
+      "description": "博主/账号基础信息",
+      "required": ["name", "platform"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "账号名称"
+        },
+        "platform": {
+          "type": "string",
+          "description": "所属平台",
+          "enum": ["抖音", "小红书", "B站", "视频号", "微博", "TikTok", "YouTube", "Instagram", "快手", "其他"]
+        },
+        "profile_url": {
+          "type": "string",
+          "description": "主页链接"
+        },
+        "bio": {
+          "type": "string",
+          "description": "个人简介/签名"
+        },
+        "followers": {
+          "type": "string",
+          "description": "粉丝数（支持格式：100万、1000000、1M）"
+        },
+        "following": {
+          "type": "string",
+          "description": "关注数"
+        },
+        "total_posts": {
+          "type": "string",
+          "description": "内容总数"
+        },
+        "verified": {
+          "type": "boolean",
+          "description": "是否认证账号"
+        },
+        "category": {
+          "type": "string",
+          "description": "账号分类/领域"
+        },
+        "location": {
+          "type": "string",
+          "description": "所在地"
+        },
+        "contact_info": {
+          "type": "string",
+          "description": "联系方式（商务合作）"
+        }
+      }
+    },
+    "contents": {
+      "type": "array",
+      "description": "内容列表",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["title"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "内容唯一标识"
+          },
+          "title": {
+            "type": "string",
+            "description": "标题"
+          },
+          "url": {
+            "type": "string",
+            "description": "内容链接"
+          },
+          "publish_time": {
+            "type": "string",
+            "description": "发布时间，格式 YYYY-MM-DD 或 YYYY-MM-DD HH:MM:SS"
+          },
+          "description": {
+            "type": "string",
+            "description": "视频描述/简介"
+          },
+          "transcript": {
+            "type": "string",
+            "description": "视频转写稿/文案全文（强烈建议提供，分析质量的关键）"
+          },
+          "cover_text": {
+            "type": "string",
+            "description": "封面文字"
+          },
+          "hashtags": {
+            "type": "array",
+            "description": "标签列表",
+            "items": {
+              "type": "string"
+            }
+          },
+          "likes": {
+            "type": "number",
+            "description": "点赞数",
+            "minimum": 0
+          },
+          "comments": {
+            "type": "number",
+            "description": "评论数",
+            "minimum": 0
+          },
+          "shares": {
+            "type": "number",
+            "description": "分享/转发数",
+            "minimum": 0
+          },
+          "favorites": {
+            "type": "number",
+            "description": "收藏数",
+            "minimum": 0
+          },
+          "duration": {
+            "type": "string",
+            "description": "视频时长，格式 MM:SS 或 HH:MM:SS"
+          },
+          "content_type": {
+            "type": "string",
+            "description": "内容类型",
+            "enum": ["短视频", "长视频", "图文", "直播回放", "其他"]
+          },
+          "raw_comments": {
+            "type": "array",
+            "description": "热门评论列表（可选）",
+            "items": {
+              "type": "string"
+            }
+          },
+          "views": {
+            "type": "number",
+            "description": "播放量（如有）",
+            "minimum": 0
+          },
+          "category": {
+            "type": "string",
+            "description": "内容分类"
+          },
+          "is_top": {
+            "type": "boolean",
+            "description": "是否置顶内容"
+          },
+          "is_pinned": {
+            "type": "boolean",
+            "description": "是否精华内容"
+          }
+        }
+      }
+    },
+    "extra": {
+      "type": "object",
+      "description": "额外信息（可选）",
+      "properties": {
+        "competitor_urls": {
+          "type": "array",
+          "description": "竞品账号链接列表",
+          "items": {
+            "type": "string"
+          }
+        },
+        "analysis_focus": {
+          "type": "array",
+          "description": "用户希望重点分析的维度",
+          "items": {
+            "type": "string",
+            "enum": ["爆款规律", "商业化", "内容风格", "赛道分析", "对标复刻", "全部"]
+          }
+        },
+        "report_language": {
+          "type": "string",
+          "description": "报告语言",
+          "default": "zh-CN"
+        },
+        "analyst_notes": {
+          "type": "string",
+          "description": "分析师备注"
+        }
+      }
+    }
+  }
+}

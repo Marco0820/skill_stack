@@ -1,0 +1,69 @@
+{
+  "name": "creator-content-analysis-skill",
+  "version": "1.0.0",
+  "description": "自媒体博主/达人/KOL 内容分析 Skill，自动分析账号内容调性、风格、赛道定位、爆款规律、商业化潜力，输出结构化分析报告",
+  "author": "wby-skill-stack",
+  "license": "MIT",
+  "tags": [
+    "content-analysis",
+    "KOL",
+    "MCN",
+    "creator-economy",
+    "social-media",
+    "content-marketing",
+    "viral-analysis",
+    "commercial-potential"
+  ],
+  "triggers": [
+    "分析博主",
+    "分析达人",
+    "分析账号",
+    "KOL分析",
+    "内容分析",
+    "creator analysis",
+    "content analysis",
+    "博主拆解",
+    "账号拆解",
+    "爆款分析",
+    "商业化分析"
+  ],
+  "entry_point": "scripts/analyze_creator.py",
+  "input_formats": [
+    "JSON",
+    "CSV",
+    "Markdown",
+    "TXT",
+    "Excel (via openpyxl)"
+  ],
+  "output_formats": [
+    "Markdown report",
+    "JSON structured data"
+  ],
+  "platforms_supported": [
+    "抖音",
+    "小红书",
+    "B站",
+    "视频号",
+    "微博",
+    "TikTok",
+    "YouTube",
+    "Instagram",
+    "快手"
+  ],
+  "use_cases": [
+    "MCN 机构批量分析达人内容",
+    "品牌方筛选 KOL 投放",
+    "内容策划团队研究竞品账号",
+    "账号孵化团队对标分析",
+    "互联网营销公司内容策略研究",
+    "运营人员快速生成分析报告用于会议讨论"
+  ],
+  "dependencies": {
+    "python": ">=3.8",
+    "standard_library_only": true,
+    "optional": [
+      "openpyxl (for Excel input)",
+      "requests (for future API integration)"
+    ]
+  }
+}

@@ -41,6 +41,8 @@ Use the `/browse` skill from gstack for all web browsing. Never use `mcp__claude
 - `/unfreeze`
 - `/gstack-upgrade`
 - `/learn`
+- `/skill-creator`
+- `/resume-screener`
 
 ## Skill routing
 
@@ -60,3 +62,5 @@ Key routing rules:
 - Save progress → invoke /context-save
 - Resume context → invoke /context-restore
 - Author a backlog-ready spec/issue → invoke /spec
+- Create/improve/eval skills → invoke /skill-creator
+- 筛选简历/招聘筛选/简历分析 → invoke /resume-screener

@@ -1187,6 +1187,29 @@
 
 /* ============ Deck custom visuals: Claude Code Skill guide ============ */
 .visual-asset{background:var(--paper);border-top:2px solid var(--accent);overflow:hidden;position:relative;min-height:22vh}
+.skill-illustrated .chrome-min{margin-bottom:var(--sp-6)}
+.skill-illustrated .chrome-min .l{max-width:72vw;font-size:26px}
+.skill-illustrated .chrome-min .r{max-width:24vw}
+.skill-illustrated .card-accent{padding:var(--sp-5)!important}
+.skill-illustrated .card-accent p{font-size:max(16px,1.12vw)!important;line-height:1.42!important}
+.skill-illustrated .skill-main-row{gap:var(--sp-5)!important;margin-top:2.1vh!important}
+.skill-illustrated .skill-text-stack{gap:var(--sp-4)!important;overflow:visible;min-height:0}
+.skill-illustrated .skill-tile-grid > div{padding:var(--sp-4)!important}
+.skill-illustrated .skill-tile-grid .lucide{width:20px;height:20px}
+.skill-illustrated .skill-tile-grid .t-meta{margin-top:.55vh!important;font-size:12px}
+.skill-illustrated .skill-tile-grid .t-body-emp{font-size:16px;line-height:1.25}
+.skill-illustrated .skill-summary-card{padding:var(--sp-4)!important;gap:var(--sp-3)!important}
+.skill-illustrated .skill-summary-card .t-h-prod{font-size:max(16px,1.16vw)!important;line-height:1.28}
+.skill-illustrated .skill-summary-card .t-body-sm{font-size:15px;line-height:1.42}
+.skill-illustrated .skill-image-stack{height:100%;min-height:0}
+.skill-illustrated .skill-figure{height:100%!important;min-height:0}
+.skill-illustrated .skill-footer-row{gap:var(--sp-4)!important;margin-top:0!important}
+.skill-illustrated .skill-footer-row > div{padding-top:.7vh!important}
+.skill-illustrated .skill-footer-row .t-body-emp{font-size:16px}
+.skill-illustrated .skill-footer-spacer{height:6vh;visibility:hidden;pointer-events:none}
+.skill-illustrated-reverse .skill-main-row{grid-template-columns:7fr 5fr!important}
+.skill-illustrated-reverse .skill-image-stack{order:1}
+.skill-illustrated-reverse .skill-text-stack{order:2}
 .timeline-v.visual-asset{background:transparent;border-top:0;overflow:visible;min-height:0}
 .install-scope .chrome-min{margin-bottom:var(--sp-6)}
 .install-scope .h-xl-zh{font-size:min(4.7vw,8vh);line-height:.98}
@@ -1314,7 +1337,7 @@
 <section class="slide accent" data-layout="SWISS-COVER-ASCII" data-animate="hero">
   <div class="canvas-card">
     <canvas class="ascii-bg" aria-hidden="true"></canvas>
-    <div class="chrome-min"><div class="l">Agent Skill:蒸馏一切想象力</div><div class="r">SS · 26.06 · 01 / 21</div></div>
+    <div class="chrome-min"><div class="l">Agent Skill:蒸馏一切想象力</div><div class="r">SS · 26.06 · 01 / 32</div></div>
     <div style="flex:1;display:grid;grid-template-rows:auto 1fr auto;gap:2.6vh">
       <div data-anim="kicker" class="t-meta" style="color:rgba(255,255,255,.78);letter-spacing:.22em">放大能力边界</div>
       <h1 data-anim="title" style="align-self:center;font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(8.6vw,14.5vh);line-height:.94;letter-spacing:-.025em;color:#fff">Agent Skill:蒸馏一切想象力</h1>
@@ -1328,8 +1351,8 @@
 
 <section class="slide" data-layout="S04" data-animate="grid-reveal">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">02 · AGENDA</div><div class="r">SS · 26.06 · 02 / 21</div></div>
-    <div data-anim="line"><div class="t-cat accent">OVERVIEW</div><h2 class="h-xl-zh" style="max-width:12ch">今天聊什么</h2></div>
+    <div class="chrome-min"><div class="l">02 · AGENDA</div><div class="r">SS · 26.06 · 02 / 32</div></div>
+    <div data-anim="line"><div class="t-cat accent">OVERVIEW</div><h2 class="h-xl-zh" style="max-width:12ch;white-space:nowrap">今天聊什么</h2></div>
     <div class="sub-grid-3-2" data-anim="up" style="margin-top:var(--sp-7)">
       <div class="sub-card visual-asset">
         <i data-lucide="lightbulb" class="lucide"></i>
@@ -1371,42 +1394,42 @@
   </div>
 </section>
 
-<section class="slide" data-layout="S17" data-animate="system-diagram">
+<section class="slide skill-illustrated" data-layout="S17" data-animate="system-diagram">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">03 · WHY SKILLS</div><div class="r">SS · 26.06 · 03 / 21</div></div>
+    <div class="chrome-min"><div class="l">03 · WHY SKILLS</div><div class="r">SS · 26.06 · 03 / 32</div></div>
     <div data-anim="line" style="display:grid;grid-template-columns:4.8fr 7.2fr;gap:3vw;align-items:end">
       <div>
         <div class="t-cat accent">WHY USE SKILLS</div>
-        <h2 class="h-xl-zh" style="max-width:12ch;font-size:min(5.2vw,9vh)">Skills 的意义</h2>
+        <h2 class="h-xl-zh" style="max-width:12ch;font-size:min(5.2vw,9vh);white-space:nowrap">Skills 的意义</h2>
       </div>
       <div class="card-accent" style="padding:var(--sp-6);background:var(--accent);color:var(--accent-on)">
         <div class="t-meta" style="color:rgba(255,255,255,.72)">CORE IDEA</div>
         <p style="margin:1.2vh 0 0;font-family:var(--sans),var(--sans-zh);font-size:max(18px,1.28vw);line-height:1.48;font-weight:400;letter-spacing:0;color:rgba(255,255,255,.92)">从 Agent 的角度看，Skills 是完成特定任务的“武器”：把领域知识、标准流程和支持文件封装成可触发、可复用、可治理的能力单元。</p>
       </div>
     </div>
-    <div data-anim="up" style="display:grid;grid-template-columns:5fr 7fr;gap:var(--sp-6);align-items:stretch;flex:1;margin-top:3vh;min-height:0">
-      <div class="visual-asset" style="display:grid;grid-template-rows:auto 1fr;gap:var(--sp-5);min-height:0">
-        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border-subtle)">
+    <div class="skill-main-row" data-anim="up" style="display:grid;grid-template-columns:5fr 7fr;gap:var(--sp-6);align-items:stretch;flex:1;margin-top:3vh;min-height:0">
+      <div class="visual-asset skill-text-stack" style="display:grid;grid-template-rows:auto 1fr;gap:var(--sp-5);min-height:0">
+        <div class="skill-tile-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border-subtle)">
           <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="briefcase-business" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">DOMAIN</div><div class="t-body-emp">沉淀专业知识</div></div>
           <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="repeat-2" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">WORKFLOW</div><div class="t-body-emp">复用高频流程</div></div>
           <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="package-plus" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">CAPABILITY</div><div class="t-body-emp">扩展新能力</div></div>
           <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="layers-3" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">DISCLOSURE</div><div class="t-body-emp">按需加载资源</div></div>
         </div>
-        <div class="card-fill" style="padding:var(--sp-5);display:grid;gap:var(--sp-4);min-height:0">
+        <div class="card-fill skill-summary-card" style="padding:var(--sp-5);display:grid;gap:var(--sp-4);min-height:0">
           <div>
             <div class="t-meta">WITHOUT SKILLS</div>
             <h3 class="t-h-prod" style="font-size:max(18px,1.35vw);margin-top:.9vh">每次重新解释、重新打包、重新对齐标准</h3>
           </div>
-          <p class="t-body-sm">有了 Skills，Agent 先用轻量元数据判断是否触发；触发后再读取说明、脚本和参考资料，把一次经验变成稳定产出。</p>
+          <p class="t-body-sm">Skills 让 Agent 先用轻量元数据判断是否触发，再按需读取说明、脚本和参考资料，把一次经验变成稳定产出。</p>
         </div>
       </div>
-      <div class="visual-asset" style="display:grid;min-height:0">
-        <div class="frame-img fit-contain swiss-lined zoomable-image" style="height:100%;min-height:54vh;background:var(--paper)" onclick="openImageModal('skill意义.png','Skill 的意义总结图')">
+      <div class="visual-asset skill-image-stack" style="display:grid;min-height:0">
+        <div class="frame-img fit-contain swiss-lined zoomable-image skill-figure" style="height:50vh;background:var(--paper)" onclick="openImageModal('skill意义.png','Skill 的意义总结图')">
           <img src="skill意义.png" data-image-slot="s17-summary-4x3" alt="Skill 的意义总结图">
         </div>
       </div>
     </div>
-    <div data-anim="up" style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-4)">
+    <div class="skill-footer-row" data-anim="up" style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-4)">
       <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">LESS PROMPTING</div><div class="t-body-emp">少重复解释</div></div>
       <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">MORE CONSISTENCY</div><div class="t-body-emp">交付更稳定</div></div>
       <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">ON-DEMAND CONTEXT</div><div class="t-body-emp">上下文更克制</div></div>
@@ -1414,42 +1437,42 @@
   </div>
 </section>
 
-<section class="slide" data-layout="S17" data-animate="system-diagram">
+<section class="slide skill-illustrated" data-layout="S17" data-animate="system-diagram">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">04 · AGENT + SKILLS</div><div class="r">SS · 26.06 · 04 / 21</div></div>
+    <div class="chrome-min"><div class="l">04 · AGENT + SKILLS</div><div class="r">SS · 26.06 · 04 / 32</div></div>
     <div data-anim="line" style="display:grid;grid-template-columns:4.8fr 7.2fr;gap:3vw;align-items:end">
       <div>
         <div class="t-cat accent">AGENT PERSPECTIVE</div>
-        <h2 class="h-xl-zh" style="max-width:13ch;font-size:min(5.2vw,9vh)">从 Agent 角度思考 Skills</h2>
+        <h2 class="h-xl-zh" style="max-width:13ch;font-size:min(3.8vw,6.5vh);white-space:nowrap">从 Agent 角度思考 Skills</h2>
       </div>
       <div class="card-accent" style="padding:var(--sp-6);background:var(--accent);color:var(--accent-on)">
         <div class="t-meta" style="color:rgba(255,255,255,.72)">CORE IDEA</div>
         <p style="margin:1.2vh 0 0;font-family:var(--sans),var(--sans-zh);font-size:max(18px,1.25vw);line-height:1.48;font-weight:400;letter-spacing:0;color:rgba(255,255,255,.92)">Agent 的原生能力只是起点。Skills 把上下文、领域知识、标准流程和可重复操作封装成“武器”，让不同类型的 Agent 能稳定完成专业任务。</p>
       </div>
     </div>
-    <div data-anim="up" style="display:grid;grid-template-columns:5fr 7fr;gap:var(--sp-6);align-items:stretch;flex:1;margin-top:3vh;min-height:0">
-      <div class="visual-asset" style="display:grid;grid-template-rows:auto 1fr;gap:var(--sp-5);min-height:0">
-        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border-subtle)">
+    <div class="skill-main-row" data-anim="up" style="display:grid;grid-template-columns:5fr 7fr;gap:var(--sp-6);align-items:stretch;flex:1;margin-top:3vh;min-height:0">
+      <div class="visual-asset skill-text-stack" style="display:grid;grid-template-rows:auto 1fr;gap:var(--sp-5);min-height:0">
+        <div class="skill-tile-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border-subtle)">
           <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="code-2" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">INTERFACE</div><div class="t-body-emp">代码是通用接口</div></div>
           <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="terminal" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">SCAFFOLD</div><div class="t-body-emp">bash 与文件系统</div></div>
           <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="badge-check" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">RELIABILITY</div><div class="t-body-emp">上下文 + 专业知识</div></div>
           <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="crosshair" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">DIRECTION</div><div class="t-body-emp">按任务类型沉淀 Skill</div></div>
         </div>
-        <div class="card-fill" style="padding:var(--sp-5);display:grid;gap:var(--sp-4);min-height:0">
+        <div class="card-fill skill-summary-card" style="padding:var(--sp-5);display:grid;gap:var(--sp-4);min-height:0">
           <div>
             <div class="t-meta">HOW TO THINK</div>
             <h3 class="t-h-prod" style="font-size:max(18px,1.35vw);margin-top:.9vh">不要先想“写一个 Skill”，先想 Agent 缺哪件武器</h3>
           </div>
-          <p class="t-body-sm">编码 Agent 需要规范、框架文档和调试流程；研究 Agent 需要检索策略、资料筛选和论文分析；营销、金融等 Agent 也需要各自的模板、指标、合规规则与风险模型。</p>
+          <p class="t-body-sm">编码 Agent 需要规范、框架文档和调试流程；研究 Agent 需要检索与分析方法；营销、金融 Agent 需要模板、指标、合规规则与风险模型。</p>
         </div>
       </div>
-      <div class="visual-asset" style="display:grid;min-height:0">
-        <div class="frame-img fit-contain swiss-lined zoomable-image" style="height:100%;min-height:54vh;background:var(--paper)" onclick="openImageModal('skill意义2.png','Agent 与 Skills 总结图')">
+      <div class="visual-asset skill-image-stack" style="display:grid;min-height:0">
+        <div class="frame-img fit-contain swiss-lined zoomable-image skill-figure" style="height:50vh;background:var(--paper)" onclick="openImageModal('skill意义2.png','Agent 与 Skills 总结图')">
           <img src="skill意义2.png" data-image-slot="s17-agent-skill-4x3" alt="Agent 与 Skills 总结图">
         </div>
       </div>
     </div>
-    <div data-anim="up" style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-4)">
+    <div class="skill-footer-row" data-anim="up" style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-4)">
       <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">BREAK LIMITS</div><div class="t-body-emp">突破原生限制</div></div>
       <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">CONSISTENCY</div><div class="t-body-emp">输出保持一致</div></div>
       <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">EFFICIENCY</div><div class="t-body-emp">减少重复描述</div></div>
@@ -1457,51 +1480,462 @@
   </div>
 </section>
 
-<section class="slide" data-layout="S17" data-animate="system-diagram">
+<section class="slide skill-illustrated" data-layout="S17" data-animate="system-diagram">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">05 · SKILLS VS TOOLS, MCP & SUBAGENTS</div><div class="r">SS · 26.06 · 05 / 21</div></div>
+    <div class="chrome-min"><div class="l">05 · SKILLS VS PROMPTS, MCP & SUBAGENTS</div><div class="r">SS · 26.06 · 05 / 32</div></div>
     <div data-anim="line" style="display:grid;grid-template-columns:4.8fr 7.2fr;gap:3vw;align-items:end">
       <div>
         <div class="t-cat accent">ECOSYSTEM ROLES</div>
-        <h2 class="h-xl-zh" style="max-width:10ch;font-size:min(5.2vw,9vh)">Skills vs Tools, MCP, and Subagents（技能 vs 工具、MCP 和子代理）</h2>
+        <h2 class="h-xl-zh" style="max-width:10ch;font-size:min(5.2vw,9vh);white-space:nowrap">组件边界</h2>
+        <p class="t-body" style="margin-top:1.2vh;max-width:42ch;opacity:.78">Skills、Prompts、MCP 与 Subagents 如何协同构建智能工作流</p>
       </div>
       <div class="card-accent" style="padding:var(--sp-6);background:var(--accent);color:var(--accent-on)">
         <div class="t-meta" style="color:rgba(255,255,255,.72)">CORE IDEA</div>
-        <p style="margin:1.2vh 0 0;font-family:var(--sans),var(--sans-zh);font-size:max(18px,1.25vw);line-height:1.48;font-weight:400;letter-spacing:0;color:rgba(255,255,255,.92)">强大的 Agent 工作流不是单一组件完成的：MCP 连接外部数据，Tools 提供底层动作，Subagents 负责并行分工，Skills 把处理方法沉淀为可预测、可重复、可移植的主线程工作流。</p>
+        <p style="margin:1.2vh 0 0;font-family:var(--sans),var(--sans-zh);font-size:max(18px,1.25vw);line-height:1.48;font-weight:400;letter-spacing:0;color:rgba(255,255,255,.92)">强大的 Agent 工作流不是靠单次提示完成的：Prompts 负责即时表达任务意图，MCP 连接外部数据，Subagents 负责并行分工，Skills 把可复用方法沉淀为可预测、可移植的能力包。</p>
       </div>
     </div>
-    <div data-anim="up" style="display:grid;grid-template-columns:5fr 7fr;gap:var(--sp-6);align-items:stretch;flex:1;margin-top:2.4vh;min-height:0">
-      <div class="visual-asset" style="display:grid;grid-template-rows:auto auto;gap:var(--sp-5);min-height:0">
-        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border-subtle)">
+    <div class="skill-main-row" data-anim="up" style="display:grid;grid-template-columns:5fr 7fr;gap:var(--sp-6);align-items:stretch;flex:1;margin-top:2.4vh;min-height:0">
+      <div class="visual-asset skill-text-stack" style="display:grid;grid-template-rows:auto auto;gap:var(--sp-5);min-height:0">
+        <div class="skill-tile-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border-subtle)">
           <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="plug-zap" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">MCP</div><div class="t-body-emp">外部上下文与数据</div></div>
-          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="wrench" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">TOOLS</div><div class="t-body-emp">底层动作能力</div></div>
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="message-square-text" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">PROMPTS</div><div class="t-body-emp">会话级即时指令</div></div>
           <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="workflow" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">SKILLS</div><div class="t-body-emp">可重复工作流</div></div>
           <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="split" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">SUBAGENTS</div><div class="t-body-emp">隔离上下文并行执行</div></div>
         </div>
-        <div class="card-fill" style="padding:var(--sp-5);display:grid;gap:var(--sp-4);min-height:0">
+        <div class="card-fill skill-summary-card" style="padding:var(--sp-4);display:grid;gap:var(--sp-3);min-height:0">
           <div>
             <div class="t-meta">THREE COMPARISONS</div>
-            <h3 class="t-h-prod" style="font-size:max(18px,1.28vw);margin-top:.9vh">MCP 给数据，Tools 给动作，Subagents 给并行；Skills 教 Agent 如何稳定使用它们</h3>
+            <h3 class="t-h-prod" style="font-size:max(18px,1.28vw);margin-top:.9vh">Prompts 说清这一次要什么；Skills 封装以后反复怎么做</h3>
           </div>
-          <p class="t-body-sm">MCP 负责连接数据库、云盘和外部服务；Tools 的定义常驻上下文，适合通用底层能力；Skills 渐进式加载指令、脚本和资源，适合把专业方法变成可预测流程；Subagents 则在独立上下文中承接单一明确任务，并可绑定特定 Skills。</p>
+          <p class="t-body-sm">Prompt 是即时任务说明，适合表达一次性目标、格式、约束与示例；Skill 是可安装、可触发的文件夹能力包，按需加载说明、脚本、模板与资源，并复用专业流程。MCP 引入外部数据；Subagents 承接明确任务。</p>
         </div>
       </div>
-      <div class="visual-asset" style="display:grid;min-height:0">
-        <div class="frame-img fit-contain swiss-lined zoomable-image" style="height:54vh;background:var(--paper)" onclick="openImageModal('skillvsmcp.png','Skills、Tools、MCP 与 Subagents 关系图')">
-          <img src="skillvsmcp.png" data-image-slot="s17-skillvsmcp-3x2" alt="Skills、Tools、MCP 与 Subagents 关系图">
+      <div class="visual-asset skill-image-stack" style="display:grid;min-height:0">
+        <div class="frame-img fit-contain swiss-lined zoomable-image skill-figure" style="height:50vh;background:var(--paper)" onclick="openImageModal('组件区别.png','组件区别图')">
+          <img src="组件区别.png" data-image-slot="s17-prompt-mcp-skill-4x3" alt="组件区别图">
         </div>
       </div>
+    </div>
+    <div class="skill-footer-spacer" aria-hidden="true"></div>
+  </div>
+</section>
+
+<section class="slide skill-illustrated skill-illustrated-reverse" data-layout="S17" data-animate="system-diagram">
+  <div class="canvas-card">
+    <div class="chrome-min"><div class="l">06 · INSTALL SCOPE</div><div class="r">SS · 26.06 · 06 / 32</div></div>
+    <div data-anim="line" style="display:grid;grid-template-columns:4.8fr 7.2fr;gap:3vw;align-items:end">
+      <div>
+        <div class="t-cat accent">CHAPTER 2 · INSTALL</div>
+        <h2 class="h-xl-zh" style="max-width:11ch;font-size:min(5.2vw,9vh);white-space:nowrap">Skill 放在哪里</h2>
+      </div>
+      <div class="card-accent" style="padding:var(--sp-6);background:var(--accent);color:var(--accent-on)">
+        <div class="t-meta" style="color:rgba(255,255,255,.72)">CORE IDEA</div>
+        <p style="margin:1.2vh 0 0;font-family:var(--sans),var(--sans-zh);font-size:max(18px,1.25vw);line-height:1.48;font-weight:400;letter-spacing:0;color:rgba(255,255,255,.92)">Skill 的安装位置决定它的作用范围：个人通用能力放用户级，团队流程放项目级，组织规范放企业级，插件能力随插件分发。</p>
+      </div>
+    </div>
+    <div class="skill-main-row" data-anim="up" style="display:grid;grid-template-columns:5fr 7fr;gap:var(--sp-6);align-items:stretch;flex:1;margin-top:2.4vh;min-height:0">
+      <div class="visual-asset skill-text-stack" style="display:grid;grid-template-rows:auto 1fr;gap:var(--sp-5);min-height:0">
+        <div class="skill-tile-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border-subtle)">
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="building-2" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">ENTERPRISE</div><div class="t-body-emp">组织级规范</div></div>
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="user" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">PERSONAL</div><div class="t-body-emp">个人全局可用</div></div>
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="folder-git-2" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">PROJECT</div><div class="t-body-emp">项目专属流程</div></div>
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="package" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">PLUGIN</div><div class="t-body-emp">随插件一起生效</div></div>
+        </div>
+        <div class="card-fill skill-summary-card" style="padding:var(--sp-4);display:grid;gap:var(--sp-3);min-height:0">
+          <div>
+            <div class="t-meta">PLACEMENT RULE</div>
+            <h3 class="t-h-prod" style="font-size:max(18px,1.28vw);margin-top:.9vh">先判断能力边界，再选择安装层级</h3>
+          </div>
+          <p class="t-body-sm">通用 Skill 放 <code>~/.claude/skills/</code>；项目规范放 <code>.claude/skills/</code> 并纳入版本控制；Monorepo 可在子项目继续嵌套，形成更细粒度的生效范围。</p>
+        </div>
+      </div>
+      <div class="visual-asset skill-image-stack" style="display:grid;min-height:0">
+        <div class="frame-img fit-contain swiss-lined zoomable-image skill-figure" style="height:50vh;background:var(--paper)" onclick="openImageModal('06-skill-scope-toy.png','Skill 安装层级插图')">
+          <img src="06-skill-scope-toy.png" data-image-slot="s17-skill-scope-4x3" alt="Skill 安装层级插图">
+        </div>
+      </div>
+    </div>
+    <div class="skill-footer-row" data-anim="up" style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-4)">
+      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">GLOBAL</div><div class="t-body-emp">个人复用</div></div>
+      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">LOCAL</div><div class="t-body-emp">项目共享</div></div>
+      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">PRIORITY</div><div class="t-body-emp">同名按层级覆盖</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide skill-illustrated skill-illustrated-reverse" data-layout="S17" data-animate="system-diagram">
+  <div class="canvas-card">
+    <div class="chrome-min"><div class="l">07 · INSTALL METHODS</div><div class="r">SS · 26.06 · 07 / 32</div></div>
+    <div data-anim="line" style="display:grid;grid-template-columns:4.8fr 7.2fr;gap:3vw;align-items:end">
+      <div>
+        <div class="t-cat accent">CHAPTER 2 · INSTALL</div>
+        <h2 class="h-xl-zh" style="max-width:11ch;font-size:min(5.2vw,9vh);white-space:nowrap">三种安装方式</h2>
+      </div>
+      <div class="card-accent" style="padding:var(--sp-6);background:var(--accent);color:var(--accent-on)">
+        <div class="t-meta" style="color:rgba(255,255,255,.72)">CORE IDEA</div>
+        <p style="margin:1.2vh 0 0;font-family:var(--sans),var(--sans-zh);font-size:max(18px,1.25vw);line-height:1.48;font-weight:400;letter-spacing:0;color:rgba(255,255,255,.92)">安装 Skill 的本质不是复制一个文件，而是把“包含 SKILL.md 的完整目录”放到 Claude Code 能识别的位置。</p>
+      </div>
+    </div>
+    <div class="skill-main-row" data-anim="up" style="display:grid;grid-template-columns:5fr 7fr;gap:var(--sp-6);align-items:stretch;flex:1;margin-top:2.4vh;min-height:0">
+      <div class="visual-asset skill-text-stack" style="display:grid;grid-template-rows:auto 1fr;gap:var(--sp-5);min-height:0">
+        <div class="skill-tile-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border-subtle)">
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="copy" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">COPY</div><div class="t-body-emp">手动复制目录</div></div>
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="terminal-square" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">CLI</div><div class="t-body-emp">一键安装工具</div></div>
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="blocks" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">PLUGIN</div><div class="t-body-emp">插件市场安装</div></div>
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="check-check" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">VERIFY</div><div class="t-body-emp">检查 SKILL.md</div></div>
+        </div>
+        <div class="card-fill skill-summary-card" style="padding:var(--sp-4);display:grid;gap:var(--sp-3);min-height:0">
+          <div>
+            <div class="t-meta">INSTALL CHECKLIST</div>
+            <h3 class="t-h-prod" style="font-size:max(18px,1.28vw);margin-top:.9vh">安装后立刻验证目录结构</h3>
+          </div>
+          <p class="t-body-sm">手动复制最稳；<code>npx skills add</code> 适合从仓库快速安装；插件市场适合安装官方或社区集合。关键校验点：复制整个 Skill 文件夹，而不是只复制单个 <code>SKILL.md</code>。</p>
+        </div>
+      </div>
+      <div class="visual-asset skill-image-stack" style="display:grid;min-height:0">
+        <div class="frame-img fit-contain swiss-lined zoomable-image skill-figure" style="height:50vh;background:var(--paper)" onclick="openImageModal('07-skill-install-toy.png','Skill 安装方式插图')">
+          <img src="07-skill-install-toy.png" data-image-slot="s17-skill-install-4x3" alt="Skill 安装方式插图">
+        </div>
+      </div>
+    </div>
+    <div class="skill-footer-row" data-anim="up" style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-4)">
+      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">MANUAL</div><div class="t-body-emp">最透明</div></div>
+      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">CLI</div><div class="t-body-emp">最快速</div></div>
+      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">PLUGIN</div><div class="t-body-emp">成套分发</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide skill-illustrated skill-illustrated-reverse" data-layout="S17" data-animate="system-diagram">
+  <div class="canvas-card">
+    <div class="chrome-min"><div class="l">08 · CREATE YOUR OWN</div><div class="r">SS · 26.06 · 08 / 32</div></div>
+    <div data-anim="line" style="display:grid;grid-template-columns:4.8fr 7.2fr;gap:3vw;align-items:end">
+      <div>
+        <div class="t-cat accent">CHAPTER 2 · CREATE</div>
+        <h2 class="h-xl-zh" style="max-width:11ch;font-size:min(4.2vw,7.5vh);white-space:nowrap">创建自己的 Skill</h2>
+      </div>
+      <div class="card-accent" style="padding:var(--sp-6);background:var(--accent);color:var(--accent-on)">
+        <div class="t-meta" style="color:rgba(255,255,255,.72)">CORE IDEA</div>
+        <p style="margin:1.2vh 0 0;font-family:var(--sans),var(--sans-zh);font-size:max(18px,1.25vw);line-height:1.48;font-weight:400;letter-spacing:0;color:rgba(255,255,255,.92)">一个 Skill 的最小闭环是 SKILL.md：Frontmatter 决定何时加载，Markdown 正文决定加载后如何执行。</p>
+      </div>
+    </div>
+    <div class="skill-main-row" data-anim="up" style="display:grid;grid-template-columns:5fr 7fr;gap:var(--sp-6);align-items:stretch;flex:1;margin-top:2.4vh;min-height:0">
+      <div class="visual-asset skill-text-stack" style="display:grid;grid-template-rows:auto 1fr;gap:var(--sp-5);min-height:0">
+        <div class="skill-tile-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border-subtle)">
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="file-code-2" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">SKILL.MD</div><div class="t-body-emp">唯一必需文件</div></div>
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="scan-text" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">DESCRIPTION</div><div class="t-body-emp">触发质量核心</div></div>
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="list-checks" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">BODY</div><div class="t-body-emp">目标、步骤、格式</div></div>
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="folder-plus" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">EXTRAS</div><div class="t-body-emp">脚本、参考、资产</div></div>
+        </div>
+        <div class="card-fill skill-summary-card" style="padding:var(--sp-4);display:grid;gap:var(--sp-3);min-height:0">
+          <div>
+            <div class="t-meta">AUTHORING RULE</div>
+            <h3 class="t-h-prod" style="font-size:max(18px,1.28vw);margin-top:.9vh">写 Skill 不是堆材料，而是沉淀可执行流程</h3>
+          </div>
+          <p class="t-body-sm">正文建议写清任务目标、操作步骤、输出格式、示例与约束；复杂能力再加入 <code>scripts/</code>、<code>references/</code>、<code>assets/</code>，让模型按需加载。</p>
+        </div>
+      </div>
+      <div class="visual-asset skill-image-stack" style="display:grid;min-height:0">
+        <div class="frame-img fit-contain swiss-lined zoomable-image skill-figure" style="height:50vh;background:var(--paper)" onclick="openImageModal('08-skill-create-toy.png','创建 Skill 插图')">
+          <img src="08-skill-create-toy.png" data-image-slot="s17-skill-create-4x3" alt="创建 Skill 插图">
+        </div>
+      </div>
+    </div>
+    <div class="skill-footer-row" data-anim="up" style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-4)">
+      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">METADATA</div><div class="t-body-emp">决定触发</div></div>
+      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">INSTRUCTION</div><div class="t-body-emp">决定执行</div></div>
+      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">REFERENCE</div><div class="t-body-emp">按需扩展</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide skill-illustrated skill-illustrated-reverse" data-layout="S17" data-animate="system-diagram">
+  <div class="canvas-card">
+    <div class="chrome-min"><div class="l">09 · TRIGGER MECHANISM</div><div class="r">SS · 26.06 · 09 / 32</div></div>
+    <div data-anim="line" style="display:grid;grid-template-columns:4.8fr 7.2fr;gap:3vw;align-items:end">
+      <div>
+        <div class="t-cat accent">CHAPTER 3 · TRIGGER</div>
+        <h2 class="h-xl-zh" style="max-width:11ch;font-size:min(5.2vw,9vh);white-space:nowrap">怎样触发 Skill</h2>
+      </div>
+      <div class="card-accent" style="padding:var(--sp-6);background:var(--accent);color:var(--accent-on)">
+        <div class="t-meta" style="color:rgba(255,255,255,.72)">CORE IDEA</div>
+        <p style="margin:1.2vh 0 0;font-family:var(--sans),var(--sans-zh);font-size:max(18px,1.25vw);line-height:1.48;font-weight:400;letter-spacing:0;color:rgba(255,255,255,.92)">Skill 有两条入口：自动触发依赖 description 的语义匹配；手动触发通过斜杠命令，让用户精确指定使用哪项能力。</p>
+      </div>
+    </div>
+    <div class="skill-main-row" data-anim="up" style="display:grid;grid-template-columns:5fr 7fr;gap:var(--sp-6);align-items:stretch;flex:1;margin-top:2.4vh;min-height:0">
+      <div class="visual-asset skill-text-stack" style="display:grid;grid-template-rows:auto 1fr;gap:var(--sp-5);min-height:0">
+        <div class="skill-tile-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border-subtle)">
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="radar" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">AUTO</div><div class="t-body-emp">语义自动匹配</div></div>
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="command" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">MANUAL</div><div class="t-body-emp">斜杠精准调用</div></div>
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="layers-2" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">PROGRESSIVE</div><div class="t-body-emp">三级渐进加载</div></div>
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="target" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">MATCHING</div><div class="t-body-emp">优化触发描述</div></div>
+        </div>
+        <div class="card-fill skill-summary-card" style="padding:var(--sp-4);display:grid;gap:var(--sp-3);min-height:0">
+          <div>
+            <div class="t-meta">TRIGGER QUALITY</div>
+            <h3 class="t-h-prod" style="font-size:max(18px,1.28vw);margin-top:.9vh">description 是自动触发的灵魂</h3>
+          </div>
+          <p class="t-body-sm">每次对话先加载轻量 Frontmatter；匹配后加载正文；真正需要时再读取附加文件。要把触发关键词、使用场景和示例放在前面，避免超过 1536 字符后被截断。</p>
+        </div>
+      </div>
+      <div class="visual-asset skill-image-stack" style="display:grid;min-height:0">
+        <div class="frame-img fit-contain swiss-lined zoomable-image skill-figure" style="height:50vh;background:var(--paper)" onclick="openImageModal('09-skill-trigger-toy.png','Skill 触发机制插图')">
+          <img src="09-skill-trigger-toy.png" data-image-slot="s17-skill-trigger-4x3" alt="Skill 触发机制插图">
+        </div>
+      </div>
+    </div>
+    <div class="skill-footer-row" data-anim="up" style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-4)">
+      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">LEVEL 1</div><div class="t-body-emp">元数据常驻</div></div>
+      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">LEVEL 2</div><div class="t-body-emp">正文匹配后加载</div></div>
+      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">LEVEL 3</div><div class="t-body-emp">资源按需读取</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide skill-illustrated skill-illustrated-reverse" data-layout="S17" data-animate="system-diagram">
+  <div class="canvas-card">
+    <div class="chrome-min"><div class="l">10 · CONTROL & MANAGE</div><div class="r">SS · 26.06 · 10 / 32</div></div>
+    <div data-anim="line" style="display:grid;grid-template-columns:4.8fr 7.2fr;gap:3vw;align-items:end">
+      <div>
+        <div class="t-cat accent">CHAPTER 3 · CONTROL</div>
+        <h2 class="h-xl-zh" style="max-width:11ch;font-size:min(5.2vw,9vh);white-space:nowrap">控制与管理</h2>
+      </div>
+      <div class="card-accent" style="padding:var(--sp-6);background:var(--accent);color:var(--accent-on)">
+        <div class="t-meta" style="color:rgba(255,255,255,.72)">CORE IDEA</div>
+        <p style="margin:1.2vh 0 0;font-family:var(--sans),var(--sans-zh);font-size:max(18px,1.25vw);line-height:1.48;font-weight:400;letter-spacing:0;color:rgba(255,255,255,.92)">成熟使用 Skill 的关键是治理：哪些能力自动触发，哪些必须手动确认，哪些需要临时下线，都应写进 Frontmatter。</p>
+      </div>
+    </div>
+    <div class="skill-main-row" data-anim="up" style="display:grid;grid-template-columns:5fr 7fr;gap:var(--sp-6);align-items:stretch;flex:1;margin-top:2.4vh;min-height:0">
+      <div class="visual-asset skill-text-stack" style="display:grid;grid-template-rows:auto 1fr;gap:var(--sp-5);min-height:0">
+        <div class="skill-tile-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border-subtle)">
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="toggle-right" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">MANUAL ONLY</div><div class="t-body-emp">副作用操作手动触发</div></div>
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="eye-off" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">AUTO ONLY</div><div class="t-body-emp">背景知识隐藏菜单</div></div>
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="power-off" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">DISABLE</div><div class="t-body-emp">废弃能力临时停用</div></div>
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="list-tree" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">/SKILLS</div><div class="t-body-emp">查看来源与状态</div></div>
+        </div>
+        <div class="card-fill skill-summary-card" style="padding:var(--sp-4);display:grid;gap:var(--sp-3);min-height:0">
+          <div>
+            <div class="t-meta">GOVERNANCE RULE</div>
+            <h3 class="t-h-prod" style="font-size:max(18px,1.28vw);margin-top:.9vh">越接近真实副作用，越应该手动触发</h3>
+          </div>
+          <p class="t-body-sm"><code>disable-model-invocation</code> 阻止自动触发并节省匹配上下文；<code>user-invocable</code> 控制是否出现在斜杠菜单；定期运行 <code>/skills</code> 清理过时能力。</p>
+        </div>
+      </div>
+      <div class="visual-asset skill-image-stack" style="display:grid;min-height:0">
+        <div class="frame-img fit-contain swiss-lined zoomable-image skill-figure" style="height:50vh;background:var(--paper)" onclick="openImageModal('10-skill-manage-toy.png','Skill 控制与管理插图')">
+          <img src="10-skill-manage-toy.png" data-image-slot="s17-skill-manage-4x3" alt="Skill 控制与管理插图">
+        </div>
+      </div>
+    </div>
+    <div class="skill-footer-row" data-anim="up" style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-4)">
+      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">SIDE EFFECT</div><div class="t-body-emp">只手动</div></div>
+      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">KNOWLEDGE</div><div class="t-body-emp">可自动</div></div>
+      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">HYGIENE</div><div class="t-body-emp">定期清理</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide skill-illustrated" data-layout="S17" data-animate="system-diagram">
+  <div class="canvas-card">
+    <div class="chrome-min"><div class="l">11 · CASE DEMO</div><div class="r">SS · 26.06 · 11 / 32</div></div>
+    <div data-anim="line" style="display:grid;grid-template-columns:4.8fr 7.2fr;gap:3vw;align-items:end">
+      <div>
+        <div class="t-cat accent">YOUTUBE 05:00-12:00</div>
+        <h2 class="h-xl-zh" style="max-width:11ch;font-size:min(4.8vw,8.4vh);white-space:nowrap">招聘筛选 Skill 案例</h2>
+      </div>
+      <div class="card-accent" style="padding:var(--sp-6);background:var(--accent);color:var(--accent-on)">
+        <div class="t-meta" style="color:rgba(255,255,255,.72)">CASE IDEA</div>
+        <p style=”margin:1.2vh 0 0;font-family:var(--sans),var(--sans-zh);font-size:max(18px,1.25vw);line-height:1.48;font-weight:400;letter-spacing:0;color:rgba(255,255,255,.92)”>HR 每天筛选大量求职简历，按公司招聘标准匹配候选人，生成筛选分析报告，并邮件发送给上级——这是一套高频重复的招聘筛选流程。</p>
+      </div>
+    </div>
+    <div class="skill-main-row" data-anim="up" style="display:grid;grid-template-columns:5fr 7fr;gap:var(--sp-6);align-items:stretch;flex:1;margin-top:2.4vh;min-height:0">
+      <div class="visual-asset skill-text-stack" style="display:grid;grid-template-rows:auto 1fr;gap:var(--sp-5);min-height:0">
+        <div class="skill-tile-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border-subtle)">
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="files" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">INPUT</div><div class="t-body-emp">多个 PDF 简历</div></div>
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="clipboard-check" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">CRITERIA</div><div class="t-body-emp">销售 / 开发标准</div></div>
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="file-bar-chart" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">OUTPUT</div><div class="t-body-emp">筛选报告</div></div>
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="mail-check" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">OPTIONAL</div><div class="t-body-emp">按需发邮件</div></div>
+        </div>
+        <div class="card-fill skill-summary-card" style="padding:var(--sp-4);display:grid;gap:var(--sp-3);min-height:0">
+          <div><div class="t-meta">WHY THIS IS A SKILL</div><h3 class="t-h-prod" style="font-size:max(18px,1.28vw);margin-top:.9vh">它不是一次提示词，而是一套可复用的人事筛选流程</h3></div>
+          <p class="t-body-sm">这类任务输入稳定、判断标准稳定、输出格式稳定，最适合沉淀为 Skill：下一次只需要给简历文件夹和岗位方向，不必重写整段操作说明。</p>
+        </div>
+      </div>
+      <div class="visual-asset skill-image-stack" style="display:grid;min-height:0">
+        <div class="frame-img fit-contain swiss-lined zoomable-image skill-figure" style="height:50vh;background:var(--paper)" onclick="openImageModal('招聘skill.png','招聘筛选 Skill 案例插图')">
+          <img src="招聘skill.png" data-image-slot="s17-case-overview-16x9" alt="招聘筛选 Skill 案例插图">
+        </div>
+      </div>
+    </div>
+    <div class="skill-footer-row" data-anim="up" style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-4)">
+      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">REPEATABLE</div><div class="t-body-emp">每批简历都一样跑</div></div>
+      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">STANDARDIZED</div><div class="t-body-emp">岗位标准可复用</div></div>
+      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">DELIVERABLE</div><div class="t-body-emp">报告可直接交付</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide skill-illustrated skill-illustrated-reverse" data-layout="S17" data-animate="system-diagram">
+  <div class="canvas-card">
+    <div class="chrome-min"><div class="l">12 · CREATOR PROMPT</div><div class="r">SS · 26.06 · 12 / 32</div></div>
+    <div data-anim="line" style="display:grid;grid-template-columns:4.8fr 7.2fr;gap:3vw;align-items:end">
+      <div>
+        <div class="t-cat accent">PROMPT TO SKILL-CREATOR</div>
+        <h2 class="h-xl-zh" style="max-width:12ch;font-size:min(4.6vw,8vh);white-space:nowrap">先把工作说完整</h2>
+      </div>
+      <div class="card-accent" style="padding:var(--sp-6);background:var(--accent);color:var(--accent-on)">
+        <div class="t-meta" style="color:rgba(255,255,255,.72)">VIDEO PROMPT SUMMARY</div>
+        <p style="margin:1.2vh 0 0;font-family:var(--sans),var(--sans-zh);font-size:max(18px,1.2vw);line-height:1.48;font-weight:400;color:rgba(255,255,255,.92)">生成一个 Skill：1. 从一个本地文件夹中，读取多个 PDF 格式的求职简历；2. 分析这些简历的内容并进行筛选，筛选规则需要参考公司的文档，包括销售人员招聘标准、开发人员招聘标准；3. 分析完成后，生成一份报告，报告格式需要参考一个本地模板文件；4. 最后，如果用户要求发送报告，则把生成的报告通过 email 发送出去，否则不发送。注意，生成的 Skill 中 Markdown 文件和代码注释都使用中文简体。</p>
+      </div>
+    </div>
+    <div class="skill-main-row" data-anim="up" style="display:grid;grid-template-columns:5fr 7fr;gap:var(--sp-6);align-items:stretch;flex:1;margin-top:2.4vh;min-height:0">
+      <div class="visual-asset skill-text-stack" style="display:grid;grid-template-rows:auto 1fr;gap:var(--sp-5);min-height:0">
+        <div class="skill-tile-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border-subtle)">
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="folder-input" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">FOLDER</div><div class="t-body-emp">简历所在目录</div></div>
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="file-search" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">PARSE</div><div class="t-body-emp">读取 PDF 文本</div></div>
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="scale" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">MATCH</div><div class="t-body-emp">匹配招聘标准</div></div>
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="send" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">SEND</div><div class="t-body-emp">用户要求才发送</div></div>
+        </div>
+        <div class="card-fill skill-summary-card" style="padding:var(--sp-4);display:grid;gap:var(--sp-3);min-height:0">
+          <div><div class="t-meta">AUTHORING PRINCIPLE</div><h3 class="t-h-prod" style="font-size:max(18px,1.28vw);margin-top:.9vh">提示词里要同时写清输入、判断、产物和副作用边界</h3></div>
+          <p class="t-body-sm">“发邮件”属于真实副作用，视频里明确写成条件动作：用户要求发送才发送。这个边界应该写进 Skill，而不是让模型临场猜。</p>
+        </div>
+      </div>
+      <div class="visual-asset skill-image-stack" style="display:grid;min-height:0">
+        <div class="frame-img fit-contain swiss-lined zoomable-image skill-figure" style="height:50vh;background:var(--paper)" onclick="openImageModal('筛选简历skill生成流程.png','筛选简历 Skill 生成流程')">
+          <img src="筛选简历skill生成流程.png" data-image-slot="s17-creator-prompt-4x3" alt="筛选简历 Skill 生成流程">
+        </div>
+      </div>
+    </div>
+    <div class="skill-footer-row" data-anim="up" style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-4)">
+      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">DO</div><div class="t-body-emp">明确文件来源</div></div>
+      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">DO</div><div class="t-body-emp">明确输出模板</div></div>
+      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">DO NOT</div><div class="t-body-emp">默认发送邮件</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-layout="S22" data-image-slot="s22-hero-21x9" data-animate="why-now">
+  <div class="canvas-card">
+    <div class="chrome-min"><div class="l">13 · CREATOR QUESTIONS</div><div class="r">SS · 26.06 · 13 / 32</div></div>
+    <div data-anim="line" style="display:flex;flex-direction:column;gap:1.2vh;margin-bottom:2vh">
+      <div class="t-cat accent">RESUME-SCREENER STRUCTURE</div>
+      <h2 class="h-xl-zh" style="max-width:15ch;font-size:min(4.2vw,7.4vh);white-space:nowrap">简历筛选 Skill 解析</h2>
+    </div>
+    <div data-anim="up" style="flex:1;min-height:0;padding-bottom:var(--nav-safe-bottom);display:grid">
+      <div class="frame-img fit-contain zoomable-image" style="height:100%;max-height:none;background:var(--paper);border-top:2px solid var(--accent)" onclick="openImageModal('简历筛选skill解析.png','简历筛选 Skill 目录结构解析')">
+        <img src="简历筛选skill解析.png" data-image-slot="s22-hero-21x9" alt="简历筛选 Skill 目录结构解析" style="width:100%;height:100%;object-fit:contain;object-position:center center">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide skill-illustrated" data-layout="S17" data-animate="system-diagram">
+  <div class="canvas-card">
+    <div class="chrome-min"><div class="l">14 · GENERATED STRUCTURE</div><div class="r">SS · 26.06 · 14 / 32</div></div>
+    <div data-anim="line" style="display:grid;grid-template-columns:4.8fr 7.2fr;gap:3vw;align-items:end">
+      <div>
+        <div class="t-cat accent">RESUME-SCREENER/</div>
+        <h2 class="h-xl-zh" style="max-width:12ch;font-size:min(4.8vw,8.4vh);white-space:nowrap">生成结果是一个目录包</h2>
+      </div>
+      <div class="card-accent" style="padding:var(--sp-6);background:var(--accent);color:var(--accent-on)">
+        <div class="t-meta" style="color:rgba(255,255,255,.72)">PACKAGE SHAPE</div>
+        <p style="margin:1.2vh 0 0;font-family:var(--sans),var(--sans-zh);font-size:max(18px,1.22vw);line-height:1.48;font-weight:400;color:rgba(255,255,255,.92)">视频中生成的 Skill 不只是一个 Markdown 文件，而是把说明、脚本、标准文档和报告模板分层放进目录。</p>
+      </div>
+    </div>
+    <div class="skill-main-row" data-anim="up" style="display:grid;grid-template-columns:5fr 7fr;gap:var(--sp-6);align-items:stretch;flex:1;margin-top:2.4vh;min-height:0">
+      <div class="visual-asset skill-text-stack" style="display:grid;grid-template-rows:auto 1fr;gap:var(--sp-5);min-height:0">
+        <div class="deck-table" style="grid-template-columns:repeat(2,1fr)">
+          <div class="accent"><span>ROOT</span><strong>SKILL.md</strong></div>
+          <div><span>SCRIPT</span><strong>scripts/send_email.py</strong></div>
+          <div><span>REFERENCE</span><strong>sales_criteria.md</strong></div>
+          <div><span>REFERENCE</span><strong>developer_criteria.md</strong></div>
+          <div><span>ASSET</span><strong>report_template.md</strong></div>
+          <div class="accent"><span>NAME</span><strong>resume-screener</strong></div>
+        </div>
+        <div class="card-fill skill-summary-card" style="padding:var(--sp-4);display:grid;gap:var(--sp-3);min-height:0">
+          <div><div class="t-meta">PROGRESSIVE DISCLOSURE</div><h3 class="t-h-prod" style="font-size:max(18px,1.28vw);margin-top:.9vh">常驻的只有元数据，细节按任务需要读取</h3></div>
+          <p class="t-body-sm">岗位标准不写死在提示词里，而放到 references；报告结构放到 assets；邮件动作放到 scripts。这样既可复用，也方便修改。</p>
+        </div>
+      </div>
+      <div class="visual-asset skill-image-stack" style="display:grid;min-height:0">
+        <div class="frame-img fit-contain swiss-lined zoomable-image skill-figure" style="height:50vh;background:var(--paper)" onclick="openImageModal('08-skill-create-toy.png','Labubu Skill 目录插图')">
+          <img src="08-skill-create-toy.png" data-image-slot="s17-generated-structure-4x3" alt="Labubu Skill 目录插图">
+        </div>
+      </div>
+    </div>
+    <div class="skill-footer-row" data-anim="up" style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-4)">
+      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">SKILL.MD</div><div class="t-body-emp">说明与触发</div></div>
+      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">REFERENCES</div><div class="t-body-emp">岗位标准</div></div>
+      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">ASSETS / SCRIPTS</div><div class="t-body-emp">模板与动作</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide skill-illustrated skill-illustrated-reverse" data-layout="S17" data-animate="system-diagram">
+  <div class="canvas-card">
+    <div class="chrome-min"><div class="l">15 · SKILL.MD LOGIC</div><div class="r">SS · 26.06 · 15 / 32</div></div>
+    <div data-anim="line" style="display:grid;grid-template-columns:4.8fr 7.2fr;gap:3vw;align-items:end">
+      <div>
+        <div class="t-cat accent">WHAT THE SKILL TEACHES</div>
+        <h2 class="h-xl-zh" style="max-width:12ch;font-size:min(4.8vw,8.4vh);white-space:nowrap">主体逻辑写在 SKILL.md</h2>
+      </div>
+      <div class="card-accent" style="padding:var(--sp-6);background:var(--accent);color:var(--accent-on)">
+        <div class="t-meta" style="color:rgba(255,255,255,.72)">TRIGGER SURFACE</div>
+        <p style="margin:1.2vh 0 0;font-family:var(--sans),var(--sans-zh);font-size:max(18px,1.2vw);line-height:1.48;font-weight:400;color:rgba(255,255,255,.92)">Frontmatter 的 description 描述“招聘筛选分析工具”：批量读取 PDF 简历，依据岗位标准筛选，生成报告，并按条件发送邮件。</p>
+      </div>
+    </div>
+    <div class="skill-main-row" data-anim="up" style="display:grid;grid-template-columns:5fr 7fr;gap:var(--sp-6);align-items:stretch;flex:1;margin-top:2.4vh;min-height:0">
+      <div class="visual-asset skill-text-stack" style="display:grid;grid-template-rows:auto 1fr;gap:var(--sp-5);min-height:0">
+        <div class="skill-tile-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border-subtle)">
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="scan-text" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">METADATA</div><div class="t-body-emp">name + description</div></div>
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="list-ordered" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">WORKFLOW</div><div class="t-body-emp">读取、分析、报告</div></div>
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="book-marked" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">REFERENCES</div><div class="t-body-emp">销售 / 开发标准</div></div>
+          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="terminal-square" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">SCRIPT</div><div class="t-body-emp">send_email.py</div></div>
+        </div>
+        <div class="card-fill skill-summary-card" style="padding:var(--sp-4);display:grid;gap:var(--sp-3);min-height:0">
+          <div><div class="t-meta">INDEPENDENCE</div><h3 class="t-h-prod" style="font-size:max(18px,1.28vw);margin-top:.9vh">模板、标准和脚本独立，Skill 才能长期维护</h3></div>
+          <p class="t-body-sm">视频特别强调这种结构能保证 Skill 的独立性：换岗位标准只改 reference，换报告格式只改 template，换邮件服务只改 script。</p>
+        </div>
+      </div>
+      <div class="visual-asset skill-image-stack" style="display:grid;min-height:0">
+        <div class="frame-img fit-contain swiss-lined zoomable-image skill-figure" style="height:50vh;background:var(--paper)" onclick="openImageModal('10-skill-manage-toy.png','Labubu 管理 Skill 插图')">
+          <img src="10-skill-manage-toy.png" data-image-slot="s17-skill-md-logic-4x3" alt="Labubu 管理 Skill 插图">
+        </div>
+      </div>
+    </div>
+    <div class="skill-footer-row" data-anim="up" style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-4)">
+      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">CHANGE CRITERIA</div><div class="t-body-emp">改 references</div></div>
+      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">CHANGE REPORT</div><div class="t-body-emp">改 assets</div></div>
+      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">CHANGE DELIVERY</div><div class="t-body-emp">改 scripts</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-layout="S08" data-animate="duo-mirror">
+  <div class="canvas-card">
+    <div class="chrome-min"><div class="l">16 · TEST RUN</div><div class="r">SS · 26.06 · 16 / 32</div></div>
+    <div data-anim="line"><div class="t-cat accent">AGENT SKILLS TEST</div><h2 class="h-xl-zh" style="max-width:14ch;white-space:nowrap">测试时只给简历目录，Skill 接管流程</h2></div>
+    <div class="duo-compare" data-anim="up">
+      <div class="col accent visual-asset"><div class="col-tag"><span class="num">A</span> Input</div><div class="col-ttl">简历 + 标准</div><div class="col-desc">演示里使用多份 PDF 简历，例如李明、张伟等候选人，再配合销售/开发岗位标准。</div><ul class="col-list"><li>读取目录里的 <code>*.pdf</code></li><li>抽取候选人经历和技能</li><li>选择对应岗位标准文件</li></ul></div>
+      <div class="vrule"></div>
+      <div class="col visual-asset"><div class="col-tag"><span class="num">B</span> Output</div><div class="col-ttl">报告 + 可选邮件</div><div class="col-desc">Skill 按模板生成筛选报告，列出候选人评分、推荐理由、风险点和最终结论。</div><ul class="col-list"><li>合格 / 不合格分组</li><li>候选人匹配说明</li><li>用户确认后再发送邮件</li></ul></div>
+    </div>
+    <div class="grid-3" data-anim="up" style="margin-top:var(--sp-7)">
+      <div><div class="t-h-prod">用户少说话</div><p class="t-body-sm">从“请分析这个目录”就能触发完整流程。</p></div>
+      <div><div class="t-h-prod">Agent 少猜测</div><p class="t-body-sm">标准、模板、脚本都在 Skill 包里。</p></div>
+      <div><div class="t-h-prod">组织可复用</div><p class="t-body-sm">HR、招聘负责人和团队都可以共享同一套筛选规则。</p></div>
     </div>
   </div>
 </section>
 
 <section class="slide" data-layout="S05" data-animate="stack-build">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">06 · ANATOMY</div><div class="r">SS · 26.06 · 06 / 21</div></div>
+    <div class="chrome-min"><div class="l">17 · ANATOMY</div><div class="r">SS · 26.06 · 17 / 32</div></div>
     <div data-anim="line" style="display:grid;grid-template-columns:4.5fr 7.5fr;gap:3vw;align-items:end">
       <div>
         <div class="t-cat accent">SKILL DIRECTORY</div>
-        <h2 class="h-xl-zh" style="max-width:12ch">一个 Skill 的最小结构</h2>
+        <h2 class="h-xl-zh" style="max-width:12ch;white-space:nowrap">一个 Skill 的最小结构</h2>
       </div>
       <div class="visual-asset" style="display:grid;grid-template-columns:1.1fr 1.4fr;gap:1px;background:var(--border-subtle);border-top:2px solid var(--accent)">
         <div style="background:var(--paper);padding:var(--sp-5);display:grid;gap:1.1vh">
@@ -1525,8 +1959,8 @@
 
 <section class="slide" data-layout="S14" data-animate="loop-form">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">07 · HOW IT RUNS</div><div class="r">SS · 26.06 · 07 / 21</div></div>
-    <div data-anim="line"><div class="t-cat accent">MATCH · LOAD · EXECUTE</div><h2 class="h-xl-zh" style="max-width:14ch">Skill 的运行路径不是魔法</h2></div>
+    <div class="chrome-min"><div class="l">18 · HOW IT RUNS</div><div class="r">SS · 26.06 · 18 / 32</div></div>
+    <div data-anim="line"><div class="t-cat accent">MATCH · LOAD · EXECUTE</div><h2 class="h-xl-zh" style="max-width:14ch;white-space:nowrap">Skill 的运行路径不是魔法</h2></div>
     <div style="display:grid;grid-template-columns:5fr 7fr;gap:3vw;flex:1;align-items:center;margin-top:4vh">
       <div data-anim="up" class="col">
         <div class="step accent-top"><div class="step-nb">01</div><div class="step-title">读取 Frontmatter</div><div class="step-desc">模型先看到轻量元数据，尤其是 description。</div></div>
@@ -1541,8 +1975,8 @@
 
 <section class="slide" data-layout="S04" data-animate="grid-reveal">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">08 · CORE TRAITS</div><div class="r">SS · 26.06 · 08 / 21</div></div>
-    <div data-anim="line"><div class="t-cat accent">REUSE · SHARE · TRIGGER</div><h2 class="h-xl-zh" style="max-width:15ch">Skill 的价值在于把经验固化成能力</h2></div>
+    <div class="chrome-min"><div class="l">19 · CORE TRAITS</div><div class="r">SS · 26.06 · 19 / 32</div></div>
+    <div data-anim="line"><div class="t-cat accent">REUSE · SHARE · TRIGGER</div><h2 class="h-xl-zh" style="max-width:15ch;white-space:nowrap">Skill 的价值在于把经验固化成能力</h2></div>
     <div class="sub-grid-3-2" data-anim="up">
       <div class="sub-card visual-asset accent"><i data-lucide="repeat" class="lucide"></i><span class="nb-corner">01</span><div class="ttl">可复用</div><div class="desc">把常见任务抽成标准流程，降低每次从零解释的成本。</div></div>
       <div class="sub-card visual-asset"><i data-lucide="share-2" class="lucide"></i><span class="nb-corner">02</span><div class="ttl">可分享</div><div class="desc">目录结构天然适合 GitHub、团队仓库和插件市场分发。</div></div>
@@ -1556,8 +1990,8 @@
 
 <section class="slide" data-layout="S08" data-animate="duo-mirror">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">09 · BOUNDARIES</div><div class="r">SS · 26.06 · 09 / 21</div></div>
-    <div data-anim="line"><div class="t-cat accent">SKILL / PLUGIN / MCP</div><h2 class="h-xl-zh" style="max-width:14ch">别把三个概念混在一起</h2></div>
+    <div class="chrome-min"><div class="l">20 · BOUNDARIES</div><div class="r">SS · 26.06 · 20 / 32</div></div>
+    <div data-anim="line"><div class="t-cat accent">SKILL / PLUGIN / MCP</div><h2 class="h-xl-zh" style="max-width:14ch;white-space:nowrap">别把三个概念混在一起</h2></div>
     <div class="duo-compare" data-anim="up">
       <div class="col accent visual-asset"><div class="col-tag"><span class="num">A</span> Skill</div><div class="col-ttl">能力模块</div><div class="col-desc">面向单一工作流：告诉模型“遇到这类任务该怎么做”。</div><ul class="col-list"><li>目录内至少包含 <code>SKILL.md</code></li><li>重点是知识、流程、检查标准</li><li>可以被 Plugin 收纳和分发</li></ul></div>
       <div class="vrule"></div>
@@ -1568,8 +2002,8 @@
 
 <section class="slide install-scope" data-layout="S02" data-animate="progression">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">10 · INSTALL SCOPE</div><div class="r">SS · 26.06 · 10 / 21</div></div>
-    <div data-anim="line"><div class="t-cat accent">PRIORITY ORDER</div><h2 class="h-xl-zh" style="max-width:13ch">安装位置决定可见范围与优先级</h2></div>
+    <div class="chrome-min"><div class="l">21 · INSTALL SCOPE</div><div class="r">SS · 26.06 · 21 / 32</div></div>
+    <div data-anim="line"><div class="t-cat accent">PRIORITY ORDER</div><h2 class="h-xl-zh" style="max-width:13ch;white-space:nowrap">安装位置决定可见范围与优先级</h2></div>
     <div class="timeline-v visual-asset" data-anim="up">
       <div class="tl-node accent"><div class="dot"></div><div class="yr">01</div><div class="multi">Enterprise</div><div class="desc">组织统一下发，适合企业规范、合规流程和团队标准。</div></div>
       <div class="tl-node"><div class="dot"></div><div class="yr">02</div><div class="multi">User</div><div class="desc"><code>~/.claude/skills/skill-name/SKILL.md</code>，个人全局可用。</div></div>
@@ -1582,8 +2016,8 @@
 
 <section class="slide" data-layout="S16" data-animate="field-notes">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">11 · INSTALL METHODS</div><div class="r">SS · 26.06 · 11 / 21</div></div>
-    <div data-anim="line"><div class="t-cat accent">THREE ENTRY POINTS</div><h2 class="h-xl-zh" style="max-width:14ch">安装 Skill 有三条常用路径</h2></div>
+    <div class="chrome-min"><div class="l">22 · INSTALL METHODS</div><div class="r">SS · 26.06 · 22 / 32</div></div>
+    <div data-anim="line"><div class="t-cat accent">THREE ENTRY POINTS</div><h2 class="h-xl-zh" style="max-width:14ch;white-space:nowrap">安装 Skill 有三条常用路径</h2></div>
     <div class="sub-grid-3-2" data-anim="up">
       <div class="sub-card visual-asset accent"><i data-lucide="folder-down" class="lucide"></i><span class="nb-corner">01</span><div class="ttl">手动复制目录</div><div class="desc">从 GitHub 克隆或下载，把 Skill 文件夹放入 user 或 project skills 目录。</div></div>
       <div class="sub-card visual-asset"><i data-lucide="package-plus" class="lucide"></i><span class="nb-corner">02</span><div class="ttl">skills CLI</div><div class="desc"><code>npx skills add &lt;repo&gt; --skill &lt;name&gt;</code> 适合从公开仓库快速安装。</div></div>
@@ -1597,8 +2031,8 @@
 
 <section class="slide" data-layout="S17" data-animate="system-diagram">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">12 · CREATE YOUR OWN</div><div class="r">SS · 26.06 · 12 / 21</div></div>
-    <div style="display:grid;grid-template-columns:5fr 7fr;gap:3vw;align-items:start" data-anim="line"><div><div class="t-cat accent">AUTHORING MODEL</div><h2 class="h-xl-zh">创建 Skill：先定义工作，再写说明</h2></div><p class="t-body" style="max-width:48ch">PDF 给出三种起步方式：手写 <code>SKILL.md</code>、让 Claude 生成初稿、使用 <code>/skill-creator</code>。关键不是堆知识，而是把高频任务拆成可执行流程。</p></div>
+    <div class="chrome-min"><div class="l">23 · CREATE YOUR OWN</div><div class="r">SS · 26.06 · 23 / 32</div></div>
+    <div style="display:grid;grid-template-columns:5fr 7fr;gap:3vw;align-items:start" data-anim="line"><div><div class="t-cat accent">AUTHORING MODEL</div><h2 class="h-xl-zh" style="white-space:nowrap">创建 Skill：先定义工作，再写说明</h2></div><p class="t-body" style="max-width:48ch">PDF 给出三种起步方式：手写 <code>SKILL.md</code>、让 Claude 生成初稿、使用 <code>/skill-creator</code>。关键不是堆知识，而是把高频任务拆成可执行流程。</p></div>
     <figure class="frame-img visual-asset r-21x9" data-anim="up"><div class="matrix-visual"><div>INPUT</div><div class="accent">TASK</div><div>RULES</div><div>CHECK</div><div>SKILL.md</div><div>scripts</div><div>refs</div><div>assets</div></div></figure>
     <div class="grid-3" data-anim="up" style="margin-top:var(--sp-7)"><div><div class="t-h-prod">先写场景</div><p class="t-body-sm">用户在什么任务中需要它，输入和完成标准是什么。</p></div><div><div class="t-h-prod">再写流程</div><p class="t-body-sm">按步骤说明要读什么、做什么、校验什么。</p></div><div><div class="t-h-prod">最后补工具</div><p class="t-body-sm">脚本、模板和示例只在必要时加入，保持核心轻量。</p></div></div>
   </div>
@@ -1606,8 +2040,8 @@
 
 <section class="slide" data-layout="S21" data-animate="tech-spec">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">13 · FRONTMATTER</div><div class="r">SS · 26.06 · 13 / 21</div></div>
-    <div data-anim="line"><div class="t-cat accent">SPEC SHEET</div><h2 class="h-xl-zh" style="max-width:16ch">Frontmatter 是触发与治理的控制面</h2></div>
+    <div class="chrome-min"><div class="l">24 · FRONTMATTER</div><div class="r">SS · 26.06 · 24 / 32</div></div>
+    <div data-anim="line"><div class="t-cat accent">SPEC SHEET</div><h2 class="h-xl-zh" style="max-width:16ch;white-space:nowrap">Frontmatter 是触发与治理的控制面</h2></div>
     <div style="display:grid;grid-template-columns:5fr 7fr;gap:3vw;align-items:start;flex:1" data-anim="up">
       <figure class="frame-img visual-asset r-16x10 v-code" aria-label="code visual"><div class="code-panel"><div class="code-line accent-line"><span>01</span><code>---</code></div><div class="code-line "><span>02</span><code>name: skill-name</code></div><div class="code-line "><span>03</span><code>description: when to use this skill</code></div><div class="code-line "><span>04</span><code>allowed-tools: Read, Write, Bash</code></div><div class="code-line "><span>05</span><code>disable-model-invocation: false</code></div><div class="code-line "><span>06</span><code>user-invocable: true</code></div><div class="code-line "><span>07</span><code>---</code></div></div></figure>
       <ul class="spec-list">
@@ -1622,8 +2056,8 @@
 
 <section class="slide" data-layout="S07" data-animate="bar-grow">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">14 · TRIGGER QUALITY</div><div class="r">SS · 26.06 · 14 / 21</div></div>
-    <div data-anim="line"><div class="t-cat accent">DESCRIPTION MATTERS</div><h2 class="h-xl-zh" style="max-width:14ch">触发准确率来自具体场景描述</h2></div>
+    <div class="chrome-min"><div class="l">25 · TRIGGER QUALITY</div><div class="r">SS · 26.06 · 25 / 32</div></div>
+    <div data-anim="line"><div class="t-cat accent">DESCRIPTION MATTERS</div><h2 class="h-xl-zh" style="max-width:14ch;white-space:nowrap">触发准确率来自具体场景描述</h2></div>
     <div class="bar-chart" data-anim="up" style="margin-top:7vh">
       <div class="bar-row"><div class="bar-label">VAGUE</div><div class="bar-track"><div class="bar-fill" style="width:20%"></div></div><div class="bar-value">20%</div></div>
       <div class="bar-row"><div class="bar-label">SCENARIO</div><div class="bar-track"><div class="bar-fill" style="width:50%"></div></div><div class="bar-value">50%+</div></div>
@@ -1636,8 +2070,8 @@
 
 <section class="slide" data-layout="S11" data-animate="timeline-walk">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">15 · USING SKILLS</div><div class="r">SS · 26.06 · 15 / 21</div></div>
-    <div style="display:grid;grid-template-columns:auto 1fr;gap:3vw;align-items:start" data-anim="line"><div class="num-mega thin" style="color:var(--accent)">/</div><div><div class="t-cat accent">AUTO + MANUAL</div><h2 class="h-xl-zh">触发方式：自动匹配，也能显式调用</h2></div></div>
+    <div class="chrome-min"><div class="l">26 · USING SKILLS</div><div class="r">SS · 26.06 · 26 / 32</div></div>
+    <div style="display:grid;grid-template-columns:auto 1fr;gap:3vw;align-items:start" data-anim="line"><div class="num-mega thin" style="color:var(--accent)">/</div><div><div class="t-cat accent">AUTO + MANUAL</div><h2 class="h-xl-zh" style="white-space:nowrap">触发方式：自动匹配，也能显式调用</h2></div></div>
     <div class="timeline-h" data-anim="up">
       <div class="tl-row">
         <div class="th-node up accent"><div class="dot"></div><div class="label"><div class="yr">AUTO</div><div class="name">自然语言任务</div><div class="desc">模型按 description 匹配</div></div></div>
@@ -1653,8 +2087,8 @@
 
 <section class="slide" data-layout="S20" data-animate="stacked-ledger">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">16 · PROGRESSIVE DISCLOSURE</div><div class="r">SS · 26.06 · 16 / 21</div></div>
-    <div data-anim="line"><div class="t-cat accent">TOKEN ECONOMY</div><h2 class="h-xl-zh" style="max-width:15ch">逐步披露让 Skill 又轻又准</h2></div>
+    <div class="chrome-min"><div class="l">27 · PROGRESSIVE DISCLOSURE</div><div class="r">SS · 26.06 · 27 / 32</div></div>
+    <div data-anim="line"><div class="t-cat accent">TOKEN ECONOMY</div><h2 class="h-xl-zh" style="max-width:15ch;white-space:nowrap">逐步披露让 Skill 又轻又准</h2></div>
     <div data-anim="ledger" style="display:grid;grid-template-columns:6fr 6fr;gap:3vw;align-items:stretch;flex:1;margin-top:5vh">
       <div class="col">
         <div class="ledger-row" style="display:grid;grid-template-columns:auto 1fr auto;gap:2vw;align-items:center;border-top:1px solid var(--border-subtle);padding:2.2vh 0"><div class="ledger-num kpi-thin-sm">100</div><div class="ledger-label"><div class="t-h-prod">Level 1 · Frontmatter</div><div class="t-body-sm">先只暴露约百级 token 的元数据。</div></div><i data-lucide="scan-text" class="ledger-icon"></i></div>
@@ -1668,8 +2102,8 @@
 
 <section class="slide" data-layout="S19" data-animate="four-cards">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">17 · BEHAVIOR SWITCHES</div><div class="r">SS · 26.06 · 17 / 21</div></div>
-    <div data-anim="line"><div class="rule accent"></div><div style="margin-top:var(--sp-7)"><div class="t-cat accent">INVOCATION MATRIX</div><h2 class="h-xl-zh" style="max-width:14ch">两个开关决定 Skill 何时出现</h2></div></div>
+    <div class="chrome-min"><div class="l">28 · BEHAVIOR SWITCHES</div><div class="r">SS · 26.06 · 28 / 32</div></div>
+    <div data-anim="line"><div class="rule accent"></div><div style="margin-top:var(--sp-7)"><div class="t-cat accent">INVOCATION MATRIX</div><h2 class="h-xl-zh" style="max-width:14ch;white-space:nowrap">两个开关决定 Skill 何时出现</h2></div></div>
     <div class="grid-4" data-anim="up" style="margin-top:var(--sp-8)">
       <div class="sub-card visual-asset accent"><span class="nb-corner">A</span><div class="ttl">默认</div><div class="desc">自动触发 + 手动触发。适合大多数工作流。</div></div>
       <div class="sub-card visual-asset"><span class="nb-corner">B</span><div class="ttl">manual only</div><div class="desc"><code>disable-model-invocation: true</code>，不自动加载，只能显式调用。</div></div>
@@ -1681,8 +2115,8 @@
 
 <section class="slide" data-layout="S15" data-animate="matrix-fill">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">18 · MANAGE</div><div class="r">SS · 26.06 · 18 / 21</div></div>
-    <div data-anim="line"><div class="t-cat accent">OPERATIONS</div><h2 class="h-xl-zh" style="max-width:15ch">管理 Skill：查看、停用、删除、更新</h2></div>
+    <div class="chrome-min"><div class="l">29 · MANAGE</div><div class="r">SS · 26.06 · 29 / 32</div></div>
+    <div data-anim="line"><div class="t-cat accent">OPERATIONS</div><h2 class="h-xl-zh" style="max-width:15ch;white-space:nowrap">管理 Skill：查看、停用、删除、更新</h2></div>
     <div class="deck-table visual-asset" data-anim="up" style="margin-top:var(--sp-7)">
       <div class="accent"><span>VIEW</span><strong>/skills</strong></div><div><span>DISABLE</span><strong>修改 Frontmatter</strong></div><div><span>DELETE</span><strong>移除目录</strong></div><div><span>UPDATE</span><strong>/plugin update</strong></div>
       <div><span>PATH</span><strong>User</strong></div><div><span>PATH</span><strong>Project</strong></div><div><span>PATH</span><strong>Plugin</strong></div><div class="accent"><span>RULE</span><strong>就近优先</strong></div>
@@ -1695,8 +2129,8 @@
   <div class="canvas-card" style="padding:0">
     <figure class="frame-img visual-asset r-21x9" style="max-height:none;height:44vh"><div class="hero-strip"></div></figure>
     <div class="image-hero-body" data-anim="up">
-      <div class="chrome-min" style="grid-column:1 / -1;margin-bottom:var(--sp-5)"><div class="l">19 · DISCOVERY MAP</div><div class="r">SS · 26.06 · 19 / 21</div></div>
-      <div><div class="t-cat accent">DISCOVERY MAP</div><h2 class="h-xl-zh" style="max-width:12ch">去哪找更多 Skill</h2><p class="t-body" style="margin-top:var(--sp-5);max-width:50ch">PDF 将来源分成三类：官方插件市场、第三方 Skill 分享站和 GitHub 开源社区。先看来源可信度，再看维护频率和权限边界。</p></div>
+      <div class="chrome-min" style="grid-column:1 / -1;margin-bottom:var(--sp-5)"><div class="l">30 · DISCOVERY MAP</div><div class="r">SS · 26.06 · 30 / 32</div></div>
+      <div><div class="t-cat accent">DISCOVERY MAP</div><h2 class="h-xl-zh" style="max-width:12ch;white-space:nowrap">去哪找更多 Skill</h2><p class="t-body" style="margin-top:var(--sp-5);max-width:50ch">PDF 将来源分成三类：官方插件市场、第三方 Skill 分享站和 GitHub 开源社区。先看来源可信度，再看维护频率和权限边界。</p></div>
       <div class="image-hero-stats">
         <div class="kpi-cell"><div class="lbl">OFFICIAL</div><div class="nb">36<span class="unit">+</span></div><div class="note">官方市场与官方 Skill 集合。</div></div>
         <div class="kpi-cell"><div class="lbl">SITES</div><div class="nb">3</div><div class="note">skills.sh、agentskill.sh、Lobehub Skills。</div></div>
@@ -1708,7 +2142,7 @@
 
 <section class="slide" data-layout="S13" data-animate="three-forces">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">20 · RECOMMENDED STACKS</div><div class="r">SS · 26.06 · 20 / 21</div></div>
+    <div class="chrome-min"><div class="l">31 · RECOMMENDED STACKS</div><div class="r">SS · 26.06 · 31 / 32</div></div>
     <div style="display:grid;grid-template-columns:4fr 8fr;gap:3vw;flex:1" data-anim="up">
       <div class="stack-block b-ink visual-asset" style="margin-top:0"><div class="layer-nb">STARTER SET</div><div class="layer-ttl">先安装能直接改变工作流的 Skill</div><div class="layer-desc">选择标准：高频、可验证、可替代重复解释。别从收藏开始，从你的真实任务开始。</div><div class="layer-tag">find · design · document · code</div></div>
       <div class="sub-grid-3-2" style="margin-top:0">
@@ -1728,7 +2162,7 @@
     <div class="split-half">
       <div class="half b-accent" style="padding:5.6vh 3.6vw 4.4vh;justify-content:space-between;position:relative;overflow:hidden">
         <canvas class="ascii-bg" aria-hidden="true"></canvas>
-        <div class="chrome-min" style="position:relative;z-index:1"><div class="l">21 / 21</div><div class="r">CLOSING</div></div>
+        <div class="chrome-min" style="position:relative;z-index:1"><div class="l">32 / 32</div><div class="r">CLOSING</div></div>
         <div data-anim="manifesto" style="position:relative;z-index:1"><div class="t-meta" style="color:rgba(255,255,255,.78);letter-spacing:.22em;margin-bottom:1.6vh">FINAL CHECKLIST</div><h2 style="font-family:var(--sans),var(--sans-zh);font-size:min(7.4vw,13vh);line-height:.96;letter-spacing:-.025em;font-weight:200;color:#fff">把经验<br/>封装成<br/><span style="font-style:italic;font-weight:300">能力</span></h2><p style="font-family:var(--sans),var(--sans-zh);font-size:max(16px,1.04vw);line-height:1.6;color:rgba(255,255,255,.82);max-width:38ch;margin-top:2vh">一个好 Skill 不只是“提示词”，而是一套能被触发、执行、复用、分享和治理的工作系统。</p></div>
         <div class="t-meta" style="color:rgba(255,255,255,.62);position:relative;z-index:1;border-top:1px solid rgba(255,255,255,.22);padding-top:2vh">吕玉振 · CLAUDE CODE SKILL GUIDE</div>
       </div>

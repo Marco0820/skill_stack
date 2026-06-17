@@ -1818,180 +1818,87 @@
 <section class="slide" data-layout="S22" data-image-slot="s22-hero-21x9" data-animate="why-now">
   <div class="canvas-card">
     <div class="chrome-min" style="margin-bottom:var(--sp-4)"><div class="l">13 · 简历筛选 Skill 解析</div><div class="r">SS · 26.06 · 13 / 32</div></div>
-    <div data-anim="up" style="flex:1;min-height:0;padding-bottom:var(--nav-safe-bottom);display:grid">
-      <div class="frame-img fit-contain zoomable-image" style="height:100%;max-height:none;background:var(--paper);border-top:2px solid var(--accent)" onclick="openImageModal('简历筛选skill解析.png','简历筛选 Skill 目录结构解析')">
-        <img src="简历筛选skill解析.png" data-image-slot="s22-hero-21x9" alt="简历筛选 Skill 目录结构解析" style="width:100%;height:100%;object-fit:contain;object-position:center center">
+    <div data-anim="up" style="flex:1;min-height:0;display:grid">
+      <div class="frame-img zoomable-image" style="height:100%;max-height:none;background:var(--paper);position:relative;overflow:hidden" onclick="openImageModal('简历筛选skill解析.png','简历筛选 Skill 目录结构解析')">
+        <img src="简历筛选skill解析.png" data-image-slot="s22-hero-21x9" alt="简历筛选 Skill 目录结构解析" style="position:absolute;top:0;bottom:0;left:50%;transform:translateX(-50%);width:auto;height:100%;max-width:none">
       </div>
     </div>
   </div>
 </section>
 
-<section class="slide skill-illustrated" data-layout="S17" data-animate="system-diagram">
+<section class="slide" data-layout="S22" data-image-slot="s22-hero-21x9" data-animate="why-now">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">14 · GENERATED STRUCTURE</div><div class="r">SS · 26.06 · 14 / 32</div></div>
-    <div data-anim="line" style="display:grid;grid-template-columns:4.8fr 7.2fr;gap:3vw;align-items:end">
-      <div>
-        <div class="t-cat accent">RESUME-SCREENER/</div>
-        <h2 class="h-xl-zh" style="max-width:12ch;font-size:min(4.8vw,8.4vh);white-space:nowrap">生成结果是一个目录包</h2>
+    <div class="chrome-min" style="margin-bottom:var(--sp-4)"><div class="l">14 · 筛选简历 Skill 流程</div><div class="r">SS · 26.06 · 14 / 32</div></div>
+    <div data-anim="up" style="flex:1;min-height:0;display:grid">
+      <div class="frame-img zoomable-image" style="height:100%;max-height:none;background:var(--paper);position:relative;overflow:hidden" onclick="openImageModal('筛选简历skill流程.png','筛选简历 Skill 流程')">
+        <img src="筛选简历skill流程.png" data-image-slot="s22-hero-21x9" alt="筛选简历 Skill 流程" style="position:absolute;top:0;bottom:0;left:50%;transform:translateX(-50%);width:auto;height:100%;max-width:none">
       </div>
-      <div class="card-accent" style="padding:var(--sp-6);background:var(--accent);color:var(--accent-on)">
-        <div class="t-meta" style="color:rgba(255,255,255,.72)">PACKAGE SHAPE</div>
-        <p style="margin:1.2vh 0 0;font-family:var(--sans),var(--sans-zh);font-size:max(18px,1.22vw);line-height:1.48;font-weight:400;color:rgba(255,255,255,.92)">视频中生成的 Skill 不只是一个 Markdown 文件，而是把说明、脚本、标准文档和报告模板分层放进目录。</p>
-      </div>
-    </div>
-    <div class="skill-main-row" data-anim="up" style="display:grid;grid-template-columns:5fr 7fr;gap:var(--sp-6);align-items:stretch;flex:1;margin-top:2.4vh;min-height:0">
-      <div class="visual-asset skill-text-stack" style="display:grid;grid-template-rows:auto 1fr;gap:var(--sp-5);min-height:0">
-        <div class="deck-table" style="grid-template-columns:repeat(2,1fr)">
-          <div class="accent"><span>ROOT</span><strong>SKILL.md</strong></div>
-          <div><span>SCRIPT</span><strong>scripts/send_email.py</strong></div>
-          <div><span>REFERENCE</span><strong>sales_criteria.md</strong></div>
-          <div><span>REFERENCE</span><strong>developer_criteria.md</strong></div>
-          <div><span>ASSET</span><strong>report_template.md</strong></div>
-          <div class="accent"><span>NAME</span><strong>resume-screener</strong></div>
-        </div>
-        <div class="card-fill skill-summary-card" style="padding:var(--sp-4);display:grid;gap:var(--sp-3);min-height:0">
-          <div><div class="t-meta">PROGRESSIVE DISCLOSURE</div><h3 class="t-h-prod" style="font-size:max(18px,1.28vw);margin-top:.9vh">常驻的只有元数据，细节按任务需要读取</h3></div>
-          <p class="t-body-sm">岗位标准不写死在提示词里，而放到 references；报告结构放到 assets；邮件动作放到 scripts。这样既可复用，也方便修改。</p>
-        </div>
-      </div>
-      <div class="visual-asset skill-image-stack" style="display:grid;min-height:0">
-        <div class="frame-img fit-contain swiss-lined zoomable-image skill-figure" style="height:50vh;background:var(--paper)" onclick="openImageModal('08-skill-create-toy.png','Labubu Skill 目录插图')">
-          <img src="08-skill-create-toy.png" data-image-slot="s17-generated-structure-4x3" alt="Labubu Skill 目录插图">
-        </div>
-      </div>
-    </div>
-    <div class="skill-footer-row" data-anim="up" style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-4)">
-      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">SKILL.MD</div><div class="t-body-emp">说明与触发</div></div>
-      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">REFERENCES</div><div class="t-body-emp">岗位标准</div></div>
-      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">ASSETS / SCRIPTS</div><div class="t-body-emp">模板与动作</div></div>
     </div>
   </div>
 </section>
 
-<section class="slide skill-illustrated skill-illustrated-reverse" data-layout="S17" data-animate="system-diagram">
+<section class="slide" data-layout="S22" data-image-slot="s22-hero-21x9" data-animate="why-now">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">15 · SKILL.MD LOGIC</div><div class="r">SS · 26.06 · 15 / 32</div></div>
-    <div data-anim="line" style="display:grid;grid-template-columns:4.8fr 7.2fr;gap:3vw;align-items:end">
-      <div>
-        <div class="t-cat accent">WHAT THE SKILL TEACHES</div>
-        <h2 class="h-xl-zh" style="max-width:12ch;font-size:min(4.8vw,8.4vh);white-space:nowrap">主体逻辑写在 SKILL.md</h2>
+    <div class="chrome-min" style="margin-bottom:var(--sp-4)"><div class="l">15 · 同事 Skill 01</div><div class="r">SS · 26.06 · 15 / 32</div></div>
+    <div data-anim="up" style="flex:1;min-height:0;display:grid">
+      <div class="frame-img zoomable-image" style="height:100%;max-height:none;background:var(--paper);position:relative;overflow:hidden" onclick="openImageModal('同事skill01.png','同事 Skill 01')">
+        <img src="同事skill01.png" data-image-slot="s22-hero-21x9" alt="同事 Skill 01" style="position:absolute;top:0;bottom:0;left:50%;transform:translateX(-50%);width:auto;height:100%;max-width:none">
       </div>
-      <div class="card-accent" style="padding:var(--sp-6);background:var(--accent);color:var(--accent-on)">
-        <div class="t-meta" style="color:rgba(255,255,255,.72)">TRIGGER SURFACE</div>
-        <p style="margin:1.2vh 0 0;font-family:var(--sans),var(--sans-zh);font-size:max(18px,1.2vw);line-height:1.48;font-weight:400;color:rgba(255,255,255,.92)">Frontmatter 的 description 描述“招聘筛选分析工具”：批量读取 PDF 简历，依据岗位标准筛选，生成报告，并按条件发送邮件。</p>
-      </div>
-    </div>
-    <div class="skill-main-row" data-anim="up" style="display:grid;grid-template-columns:5fr 7fr;gap:var(--sp-6);align-items:stretch;flex:1;margin-top:2.4vh;min-height:0">
-      <div class="visual-asset skill-text-stack" style="display:grid;grid-template-rows:auto 1fr;gap:var(--sp-5);min-height:0">
-        <div class="skill-tile-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border-subtle)">
-          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="scan-text" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">METADATA</div><div class="t-body-emp">name + description</div></div>
-          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="list-ordered" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">WORKFLOW</div><div class="t-body-emp">读取、分析、报告</div></div>
-          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="book-marked" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">REFERENCES</div><div class="t-body-emp">销售 / 开发标准</div></div>
-          <div style="background:var(--paper);padding:var(--sp-5);border-top:2px solid var(--accent)"><i data-lucide="terminal-square" class="lucide"></i><div class="t-meta" style="margin-top:.9vh">SCRIPT</div><div class="t-body-emp">send_email.py</div></div>
-        </div>
-        <div class="card-fill skill-summary-card" style="padding:var(--sp-4);display:grid;gap:var(--sp-3);min-height:0">
-          <div><div class="t-meta">INDEPENDENCE</div><h3 class="t-h-prod" style="font-size:max(18px,1.28vw);margin-top:.9vh">模板、标准和脚本独立，Skill 才能长期维护</h3></div>
-          <p class="t-body-sm">视频特别强调这种结构能保证 Skill 的独立性：换岗位标准只改 reference，换报告格式只改 template，换邮件服务只改 script。</p>
-        </div>
-      </div>
-      <div class="visual-asset skill-image-stack" style="display:grid;min-height:0">
-        <div class="frame-img fit-contain swiss-lined zoomable-image skill-figure" style="height:50vh;background:var(--paper)" onclick="openImageModal('10-skill-manage-toy.png','Labubu 管理 Skill 插图')">
-          <img src="10-skill-manage-toy.png" data-image-slot="s17-skill-md-logic-4x3" alt="Labubu 管理 Skill 插图">
-        </div>
-      </div>
-    </div>
-    <div class="skill-footer-row" data-anim="up" style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-4)">
-      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">CHANGE CRITERIA</div><div class="t-body-emp">改 references</div></div>
-      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">CHANGE REPORT</div><div class="t-body-emp">改 assets</div></div>
-      <div style="border-top:2px solid var(--accent);padding-top:1.2vh"><div class="t-meta">CHANGE DELIVERY</div><div class="t-body-emp">改 scripts</div></div>
     </div>
   </div>
 </section>
 
-<section class="slide" data-layout="S08" data-animate="duo-mirror">
+<section class="slide" data-layout="S22" data-image-slot="s22-hero-21x9" data-animate="why-now">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">16 · TEST RUN</div><div class="r">SS · 26.06 · 16 / 32</div></div>
-    <div data-anim="line"><div class="t-cat accent">AGENT SKILLS TEST</div><h2 class="h-xl-zh" style="max-width:14ch;white-space:nowrap">测试时只给简历目录，Skill 接管流程</h2></div>
-    <div class="duo-compare" data-anim="up">
-      <div class="col accent visual-asset"><div class="col-tag"><span class="num">A</span> Input</div><div class="col-ttl">简历 + 标准</div><div class="col-desc">演示里使用多份 PDF 简历，例如李明、张伟等候选人，再配合销售/开发岗位标准。</div><ul class="col-list"><li>读取目录里的 <code>*.pdf</code></li><li>抽取候选人经历和技能</li><li>选择对应岗位标准文件</li></ul></div>
-      <div class="vrule"></div>
-      <div class="col visual-asset"><div class="col-tag"><span class="num">B</span> Output</div><div class="col-ttl">报告 + 可选邮件</div><div class="col-desc">Skill 按模板生成筛选报告，列出候选人评分、推荐理由、风险点和最终结论。</div><ul class="col-list"><li>合格 / 不合格分组</li><li>候选人匹配说明</li><li>用户确认后再发送邮件</li></ul></div>
-    </div>
-    <div class="grid-3" data-anim="up" style="margin-top:var(--sp-7)">
-      <div><div class="t-h-prod">用户少说话</div><p class="t-body-sm">从“请分析这个目录”就能触发完整流程。</p></div>
-      <div><div class="t-h-prod">Agent 少猜测</div><p class="t-body-sm">标准、模板、脚本都在 Skill 包里。</p></div>
-      <div><div class="t-h-prod">组织可复用</div><p class="t-body-sm">HR、招聘负责人和团队都可以共享同一套筛选规则。</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="slide" data-layout="S05" data-animate="stack-build">
-  <div class="canvas-card">
-    <div class="chrome-min"><div class="l">17 · ANATOMY</div><div class="r">SS · 26.06 · 17 / 32</div></div>
-    <div data-anim="line" style="display:grid;grid-template-columns:4.5fr 7.5fr;gap:3vw;align-items:end">
-      <div>
-        <div class="t-cat accent">SKILL DIRECTORY</div>
-        <h2 class="h-xl-zh" style="max-width:12ch;white-space:nowrap">一个 Skill 的最小结构</h2>
-      </div>
-      <div class="visual-asset" style="display:grid;grid-template-columns:1.1fr 1.4fr;gap:1px;background:var(--border-subtle);border-top:2px solid var(--accent)">
-        <div style="background:var(--paper);padding:var(--sp-5);display:grid;gap:1.1vh">
-          <div class="t-meta">template-skill/</div>
-          <div style="display:grid;grid-template-columns:auto 1fr;gap:.8vw;align-items:center"><i data-lucide="folder" class="lucide" style="width:1.6vw;height:1.6vw"></i><div class="t-body-emp">my-skill-name</div></div>
-          <div style="display:grid;grid-template-columns:auto 1fr;gap:.8vw;align-items:center;padding-left:1.6vw"><i data-lucide="file-text" class="lucide" style="width:1.4vw;height:1.4vw"></i><div class="t-body-sm"><code>SKILL.md</code></div></div>
-        </div>
-        <div style="background:var(--paper);padding:var(--sp-5);display:grid;grid-template-columns:1fr 1fr;gap:1px">
-          <div style="border-top:1px solid var(--border-subtle);padding-top:1vh"><div class="t-meta">YAML</div><div class="t-body-sm"><code>name</code><br/><code>description</code></div></div>
-          <div style="border-top:1px solid var(--border-subtle);padding-top:1vh"><div class="t-meta">BODY</div><div class="t-body-sm">说明<br/>示例<br/>准则</div></div>
-        </div>
+    <div class="chrome-min" style="margin-bottom:var(--sp-4)"><div class="l">16 · 同事 Skill 02</div><div class="r">SS · 26.06 · 16 / 32</div></div>
+    <div data-anim="up" style="flex:1;min-height:0;display:grid">
+      <div class="frame-img zoomable-image" style="height:100%;max-height:none;background:var(--paper);position:relative;overflow:hidden" onclick="openImageModal('同事skill02.png','同事 Skill 02')">
+        <img src="同事skill02.png" data-image-slot="s22-hero-21x9" alt="同事 Skill 02" style="position:absolute;top:0;bottom:0;left:50%;transform:translateX(-50%);width:auto;height:100%;max-width:none">
       </div>
     </div>
-    <div class="stack-row" data-anim="up" style="margin-top:3vh">
-      <div class="stack-block b-accent visual-asset"><i data-lucide="file-text" class="lucide"></i><div class="layer-nb">01 / REQUIRED</div><div class="layer-ttl">YAML Frontmatter</div><div class="layer-desc">声明名称、触发描述、工具权限、版本、标签等元数据。</div><div class="layer-tag">description is the trigger surface</div></div>
-      <div class="stack-block b-grey visual-asset"><i data-lucide="book-open" class="lucide"></i><div class="layer-nb">02 / BODY</div><div class="layer-ttl">Markdown Instructions</div><div class="layer-desc">写清楚目标、流程、边界、输出标准和需要逐步披露的引用文件。</div><div class="layer-tag">procedures over slogans</div></div>
-      <div class="stack-block b-ink visual-asset"><i data-lucide="folder-tree" class="lucide"></i><div class="layer-nb">03 / OPTIONAL</div><div class="layer-ttl">附属资产</div><div class="layer-desc">脚本、模板、参考资料和示例可放入目录，按需读取，避免一次性塞满上下文。</div><div class="layer-tag">scripts · refs · assets</div></div>
-    </div>
   </div>
 </section>
 
-<section class="slide" data-layout="S14" data-animate="loop-form">
+<section class="slide" data-layout="S22" data-image-slot="s22-hero-21x9" data-animate="why-now">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">18 · HOW IT RUNS</div><div class="r">SS · 26.06 · 18 / 32</div></div>
-    <div data-anim="line"><div class="t-cat accent">MATCH · LOAD · EXECUTE</div><h2 class="h-xl-zh" style="max-width:14ch;white-space:nowrap">Skill 的运行路径不是魔法</h2></div>
-    <div style="display:grid;grid-template-columns:5fr 7fr;gap:3vw;flex:1;align-items:center;margin-top:4vh">
-      <div data-anim="up" class="col">
-        <div class="step accent-top"><div class="step-nb">01</div><div class="step-title">读取 Frontmatter</div><div class="step-desc">模型先看到轻量元数据，尤其是 description。</div></div>
-        <div class="step"><div class="step-nb">02</div><div class="step-title">匹配任务场景</div><div class="step-desc">自动触发或由用户通过斜杠命令手动触发。</div></div>
-        <div class="step"><div class="step-nb">03</div><div class="step-title">展开说明与资源</div><div class="step-desc">按任务需要加载正文、脚本和参考文件。</div></div>
-        <div class="step"><div class="step-nb">04</div><div class="step-title">执行并验证</div><div class="step-desc">把知识转化为可重复的动作、产物和检查项。</div></div>
+    <div class="chrome-min" style="margin-bottom:var(--sp-4)"><div class="l">17 · 同事 Skill 03</div><div class="r">SS · 26.06 · 17 / 32</div></div>
+    <div data-anim="up" style="flex:1;min-height:0;display:grid">
+      <div class="frame-img zoomable-image" style="height:100%;max-height:none;background:var(--paper);position:relative;overflow:hidden" onclick="openImageModal('同事skill03.png','同事 Skill 03')">
+        <img src="同事skill03.png" data-image-slot="s22-hero-21x9" alt="同事 Skill 03" style="position:absolute;top:0;bottom:0;left:50%;transform:translateX(-50%);width:auto;height:100%;max-width:none">
       </div>
-      <figure class="frame-img visual-asset r-16x10" data-anim="up"><div class="hero-strip"></div></figure>
     </div>
   </div>
 </section>
 
-<section class="slide" data-layout="S04" data-animate="grid-reveal">
+<section class="slide" data-layout="S22" data-image-slot="s22-hero-21x9" data-animate="why-now">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">19 · CORE TRAITS</div><div class="r">SS · 26.06 · 19 / 32</div></div>
-    <div data-anim="line"><div class="t-cat accent">REUSE · SHARE · TRIGGER</div><h2 class="h-xl-zh" style="max-width:15ch;white-space:nowrap">Skill 的价值在于把经验固化成能力</h2></div>
-    <div class="sub-grid-3-2" data-anim="up">
-      <div class="sub-card visual-asset accent"><i data-lucide="repeat" class="lucide"></i><span class="nb-corner">01</span><div class="ttl">可复用</div><div class="desc">把常见任务抽成标准流程，降低每次从零解释的成本。</div></div>
-      <div class="sub-card visual-asset"><i data-lucide="share-2" class="lucide"></i><span class="nb-corner">02</span><div class="ttl">可分享</div><div class="desc">目录结构天然适合 GitHub、团队仓库和插件市场分发。</div></div>
-      <div class="sub-card visual-asset"><i data-lucide="mouse-pointer-click" class="lucide"></i><span class="nb-corner">03</span><div class="ttl">可触发</div><div class="desc">可以被模型自动匹配，也可以由用户显式调用。</div></div>
-      <div class="sub-card visual-asset"><i data-lucide="layers" class="lucide"></i><span class="nb-corner">04</span><div class="ttl">可分层</div><div class="desc">Frontmatter、正文、引用文件逐层展开，控制上下文消耗。</div></div>
-      <div class="sub-card visual-asset"><i data-lucide="terminal-square" class="lucide"></i><span class="nb-corner">05</span><div class="ttl">可执行</div><div class="desc">脚本和模板让 Skill 不止是说明书，也能变成工作台。</div></div>
-      <div class="sub-card visual-asset ink"><i data-lucide="shield-check" class="lucide"></i><span class="nb-corner">06</span><div class="ttl">可治理</div><div class="desc">通过权限字段、手动触发和目录优先级管理风险。</div></div>
+    <div class="chrome-min" style="margin-bottom:var(--sp-4)"><div class="l">18 · 同事 Skill 04</div><div class="r">SS · 26.06 · 18 / 32</div></div>
+    <div data-anim="up" style="flex:1;min-height:0;display:grid">
+      <div class="frame-img zoomable-image" style="height:100%;max-height:none;background:var(--paper);position:relative;overflow:hidden" onclick="openImageModal('同事skill04.png','同事 Skill 04')">
+        <img src="同事skill04.png" data-image-slot="s22-hero-21x9" alt="同事 Skill 04" style="position:absolute;top:0;bottom:0;left:50%;transform:translateX(-50%);width:auto;height:100%;max-width:none">
+      </div>
     </div>
   </div>
 </section>
 
-<section class="slide" data-layout="S08" data-animate="duo-mirror">
+<section class="slide" data-layout="S22" data-image-slot="s22-hero-21x9" data-animate="why-now">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">20 · BOUNDARIES</div><div class="r">SS · 26.06 · 20 / 32</div></div>
-    <div data-anim="line"><div class="t-cat accent">SKILL / PLUGIN / MCP</div><h2 class="h-xl-zh" style="max-width:14ch;white-space:nowrap">别把三个概念混在一起</h2></div>
-    <div class="duo-compare" data-anim="up">
-      <div class="col accent visual-asset"><div class="col-tag"><span class="num">A</span> Skill</div><div class="col-ttl">能力模块</div><div class="col-desc">面向单一工作流：告诉模型“遇到这类任务该怎么做”。</div><ul class="col-list"><li>目录内至少包含 <code>SKILL.md</code></li><li>重点是知识、流程、检查标准</li><li>可以被 Plugin 收纳和分发</li></ul></div>
-      <div class="vrule"></div>
-      <div class="col visual-asset"><div class="col-tag"><span class="num">B</span> Plugin / MCP</div><div class="col-ttl">容器与连接层</div><div class="col-desc">Plugin 像工具箱，可包含多个 Skills、hooks、agents、MCP servers；MCP 更偏外部系统连接。</div><ul class="col-list"><li>Plugin 负责打包和市场安装</li><li>MCP 负责连接数据库、浏览器、API</li><li>Skill 负责把连接变成工作方法</li></ul></div>
+    <div class="chrome-min" style="margin-bottom:var(--sp-4)"><div class="l">19 · 同事 Skill 05</div><div class="r">SS · 26.06 · 19 / 32</div></div>
+    <div data-anim="up" style="flex:1;min-height:0;display:grid">
+      <div class="frame-img zoomable-image" style="height:100%;max-height:none;background:var(--paper);position:relative;overflow:hidden" onclick="openImageModal('同事skill05.png','同事 Skill 05')">
+        <img src="同事skill05.png" data-image-slot="s22-hero-21x9" alt="同事 Skill 05" style="position:absolute;top:0;bottom:0;left:50%;transform:translateX(-50%);width:auto;height:100%;max-width:none">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-layout="S22" data-image-slot="s22-hero-21x9" data-animate="why-now">
+  <div class="canvas-card">
+    <div class="chrome-min" style="margin-bottom:var(--sp-4)"><div class="l">20 · 同事 Skill 06</div><div class="r">SS · 26.06 · 20 / 32</div></div>
+    <div data-anim="up" style="flex:1;min-height:0;display:grid">
+      <div class="frame-img zoomable-image" style="height:100%;max-height:none;background:var(--paper);position:relative;overflow:hidden" onclick="openImageModal('同事skill06.png','同事 Skill 06')">
+        <img src="同事skill06.png" data-image-slot="s22-hero-21x9" alt="同事 Skill 06" style="position:absolute;top:0;bottom:0;left:50%;transform:translateX(-50%);width:auto;height:100%;max-width:none">
+      </div>
     </div>
   </div>
 </section>

@@ -1,0 +1,9 @@
+# resume-screener 依赖清单
+# 这些库用于 PDF 文本提取，均为可选：
+# - pdfplumber：首选，对排版复杂的简历提取效果较好
+# - pypdf：回退方案（旧名 PyPDF2 也兼容）
+# 若环境中均未安装，技能会自动回退让 Claude 用 Read 工具直接读取 PDF。
+# 安装命令：pip install -r requirements.txt
+
+pdfplumber>=0.9.0
+pypdf>=3.0.0
